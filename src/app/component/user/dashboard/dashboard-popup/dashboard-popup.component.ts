@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
+import { LoginService } from '../../../../common/service/login.service';
 
 
 
@@ -16,9 +17,11 @@ export class DashboardPopupComponent implements OnInit {
   @Input() partner = '';
   @Input() popupVisible = false;
   @Input() employees = '';
-  constructor() { }
+  role = '';
+  constructor(private loginService: LoginService) { }
 
   ngOnInit() {
+    this.role = this.loginService.role;
   }
 
   follow() {

@@ -53,12 +53,11 @@ export class ChangePasswordComponent implements OnInit {
     this.changePassword.passWord = this.newPassword;
     this.changePassword.role = this.loginService.role;
     this.changePassword.id = this.loginService.userID;
-    if (this.loginService.role === 'student') {
-      this.loginService.changePasswordUser(this.changePassword).subscribe(() => {
-        alert('Change Password Success!', 'System Notice');
-        this.loginService.getAccountUser(this.loginService.userName,this.changePassword.passWord);
-      })
-    }
+    this.loginService.changePasswordUser(this.changePassword).subscribe(() => {
+      alert('Change Password Success!', 'System Notice');
+      this.loginService.getAccountUser(this.loginService.userName, this.changePassword.passWord);
+    })
+
   }
 
   cancel() {

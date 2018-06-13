@@ -41,7 +41,7 @@ export class DashboardComponent implements OnInit {
     })
   }
 
-  viewContent(id) {
+  showDetailMail(id) {
     // let array = {
     //     "name": "a",
     //     "content": this.allMode,
@@ -70,10 +70,6 @@ export class DashboardComponent implements OnInit {
 
   add() {
     this.popupVisible = true;
-  }
-
-  cellClick() {
-    console.log('a');
   }
 
   hidePopup() {}

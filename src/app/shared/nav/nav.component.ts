@@ -118,152 +118,247 @@ export class NavComponent implements OnInit {
         },
       ]
     }
-    else this.listMenu = [
-      {
-        url: 'main/dashboard',
-        icon: 'fa fa-file-text-o',
-        isSecond: false,
-        hasChild: true,
-        child: [],
-        group: 1,
-        text: 'Dashboard'
-      },
-      {
-        url: 'main/personal',
-        icon: 'fa fa-address-card-o',
-        isSecond: false,
-        hasChild: true,
-        child: [
-          {
-            url: 'main/personal/profile',
-            icon: 'fa fa-circle',
-            isSecond: true,
-            hasChild: false,
-            group: 2,
-            text: 'Profile'
-          },
-          {
-            url: 'main/personal/change-password',
-            icon: 'fa fa-circle',
-            isSecond: true,
-            hasChild: false,
-            group: 2,
-            text: 'Change Password'
-          },
-          {
-            url: "main/personal/salary",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 2,
-            text: "Salary Information"
-          }
-        ],
-        group: 2,
-        text: "Personal Information"
-      },
-      {
-        url: "main/pit",
-        icon: "fa fa-history",
-        isSecond: false,
-        hasChild: true,
-        child: [
-          {
-            url: "main/pit/monthly-estimation",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 3,
-            text: "Monthly Estimation"
-          },
-          {
-            url: "main/pit/final-lts-dispat-cross-year",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 3,
-            text: "Final LTS-Dispat Cross Year"
-          },
-          {
-            url: "main/pit/final-lts-dispat-full-year",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 3,
-            text: "Final LTS-Dispat Full Year"
-          },
-          {
-            url: "main/pit/final-sts",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 3,
-            text: "Final STS"
-          }
-        ],
-        group: 3,
-        text: "PIT process"
-      },
-      {
-        url: "main/setting",
-        icon: "fa fa-cogs",
-        isSecond: false,
-        hasChild: true,
-        child: [
-          {
-          url: "main/setting/mail-remind",
-          icon: "fa fa-circle",
-          isSecond: true,
-          hasChild: false,
+    else if(this.loginService.role === 'partner') {
+      this.listMenu = [
+        {
+          url: 'main/dashboard',
+          icon: 'fa fa-tachometer',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 1,
+          text: 'Dashboard'
+        },
+        {
+          url: 'main/personal',
+          icon: 'fa fa-address-card-o',
+          isSecond: false,
+          hasChild: true,
+          child: [
+            {
+              url: 'main/personal/profile',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 2,
+              text: 'Profile'
+            },
+            {
+              url: 'main/personal/change-password',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 2,
+              text: 'Change Password'
+            }
+          ],
+          group: 2,
+          text: 'Personal Information'
+        },
+        {
+          url: 'main/manager',
+          icon: 'fa fa-cogs',
+          isSecond: false,
+          hasChild: true,
+          child: [
+            {
+              url: 'main/manager/follow',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 3,
+              text: 'List Follow'
+            },
+            {
+              url: 'main/manager/other',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 3,
+              text: 'Other'
+            }
+          ],
+          group: 3,
+          text: 'Manager'
+        },
+        {
+          url: 'main/inbox',
+          icon: 'fa fa-envelope-o',
+          isSecond: false,
+          hasChild: true,
+          child: [],
           group: 4,
-          text: "Mail Remind"
-          },
-          {
-            url: "main/setting/exchange-rate",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 4,
-            text: "Exchange Rate"
-          },
-          {
-            url: "main/setting/tax-rate",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 4,
-            text: "Tax Rate"
-          },
-          {
-            url: "main/setting/gross-formular-data",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 4,
-            text: "Gross Formular Data"
-          },
-          {
-            url: "main/setting/deduction-details",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 4,
-            text: "Deduction"
-          },
-          {
-            url: "main/setting/user",
-            icon: "fa fa-circle",
-            isSecond: true,
-            hasChild: false,
-            group: 4,
-            text: "User"
-
-          }
-        ],
-        group: 4,
-        text: "Setting"
-      }
-    ];
+          text: 'Inbox'
+        },
+        {
+          url: 'main/report',
+          icon: 'fa fa-file-text-o',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 4,
+          text: 'Report'
+        },
+      ]
+    }
+    else if(this.loginService.role === 'admin') {
+      this.listMenu = [
+        {
+          url: 'main/dashboard',
+          icon: 'fa fa-tachometer',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 1,
+          text: 'Dashboard'
+        },
+        {
+          url: 'main/student',
+          icon: 'fa fa-address-card-o',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 2,
+          text: 'Student Info Manager'
+        },
+        {
+          url: 'main/personal/change-password',
+          icon: 'fa fa-address-card-o',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 3,
+          text: 'Change Password'
+        },
+        {
+          url: 'main/manager',
+          icon: 'fa fa-cogs',
+          isSecond: false,
+          hasChild: true,
+          child: [
+            {
+              url: 'main/manager/follow',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 3,
+              text: 'List Follow'
+            },
+            {
+              url: 'main/manager/other',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 3,
+              text: 'Other'
+            }
+          ],
+          group: 3,
+          text: 'Manager'
+        },
+        {
+          url: 'main/inbox',
+          icon: 'fa fa-envelope-o',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 4,
+          text: 'Inbox'
+        },
+        {
+          url: 'main/report',
+          icon: 'fa fa-file-text-o',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 4,
+          text: 'Report'
+        },
+      ]
+    }
+    else if(this.loginService.role === 'lecture') {
+      this.listMenu = [
+        {
+          url: 'main/dashboard',
+          icon: 'fa fa-tachometer',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 1,
+          text: 'Dashboard'
+        },
+        {
+          url: 'main/personal',
+          icon: 'fa fa-address-card-o',
+          isSecond: false,
+          hasChild: true,
+          child: [
+            {
+              url: 'main/personal/profile',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 2,
+              text: 'Profile'
+            },
+            {
+              url: 'main/personal/change-password',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 2,
+              text: 'Change Password'
+            }
+          ],
+          group: 2,
+          text: 'Personal Information'
+        },
+        {
+          url: 'main/manager',
+          icon: 'fa fa-cogs',
+          isSecond: false,
+          hasChild: true,
+          child: [
+            {
+              url: 'main/manager/follow',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 3,
+              text: 'List Follow'
+            },
+            {
+              url: 'main/manager/other',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 3,
+              text: 'Other'
+            }
+          ],
+          group: 3,
+          text: 'Manager'
+        },
+        {
+          url: 'main/inbox',
+          icon: 'fa fa-envelope-o',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 4,
+          text: 'Inbox'
+        },
+        {
+          url: 'main/report',
+          icon: 'fa fa-file-text-o',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 4,
+          text: 'Report'
+        },
+      ]
+    }
     this.checkActive();
   }
 

@@ -38,5 +38,17 @@
   .dx-datagrid-content .dx-datagrid-table .dx-row > td:first-child {
     border-right: 0px;
   }
+  .read {
+    font-weight: normal;
+    color: rgb(34, 110, 209);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .unread {
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
 }
 

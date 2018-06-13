@@ -15,7 +15,8 @@ import { CommonModule } from '@angular/common';
         {path: 'personal', loadChildren: '../../component/user/personal-infomation/personal-infomation.module#PersonalInfomationModule'},
         {path: 'inbox', loadChildren: '../../component/user/inbox/inbox.module#InboxModule'},
         {path: 'report', loadChildren: '../../component/user/report/report.module#ReportModule'},
-        {path: 'manager', loadChildren: '../../component/user/manager/manager.module#ManagerModule'}
+        {path: 'manager', loadChildren: '../../component/user/manager/manager.module#ManagerModule'},
+        {path: 'student', loadChildren: '../../component/user/student-info/student-info.module#StudentInfoModule'}
       ]
     }])
   ],

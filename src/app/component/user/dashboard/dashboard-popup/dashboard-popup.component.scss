@@ -1,16 +1,29 @@
 .dashboard-popup {
   .dashboard-popup-header {
     height: 50px;
-    background: #263238;
+    background: #ddd;
     .partner {
       float: left;
       span {
         color: #229288;
+        font-size: 20px;
+        line-height: 2;
       }
-      background: white;
     }
     .follow {
       float: right;
     }
+  }
+  .dashboard-popup-content {
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    height: 400px;
+  }
+  .button-control {
+    float: right;
+    margin-top: 20px;
+  }
+  h5 {
+    margin-top: 20px;
   }
 }

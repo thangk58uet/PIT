@@ -3,11 +3,13 @@
     <div class="partner">
       <span>Partner: {{partner}}</span>
     </div>
-    <div class="follow">
-      <button class="btn btn-custom btn-default" (click)="follow()">Follow</button>
-    </div>
   </div>
-  <div>
-    {{employees}}
+  <h5>Nội dung</h5>
+  <div class="dashboard-popup-content">
+    <pre>{{employees}}</pre>
+  </div>
+  <div class="button-control">
+    <button *ngIf="role === 'student'" class="btn btn-custom btn-default" (click)="follow()">Follow</button>
+    <button class="btn btn-custom btn-default" (click)="cancel()">Close</button>
   </div>
 </div>
