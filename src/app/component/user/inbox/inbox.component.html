@@ -1,0 +1,52 @@
+<div class="inbox-page">
+  <div class="inbox-title">
+    <span style="font-size: 25px;margin-left: 20px;font-weight: bold">Hòm thư</span>
+    <button style ="float: right;margin-right: 148px" class="btn btn-custom btn-default" (click)="creatMail()">Soạn tin nhắn</button>
+  </div>
+
+  <div class="inbox-table">
+    <dx-data-grid id="gridData" [dataSource]="listMail" keyExpr="id" [showRowLines]="true" [columnAutoWidth]="true" [allowColumnReordering]="true"
+      [allowColumnResizing]="true" [columns]="columns" [showBorders]="true" [rowAlternationEnabled]="true">
+      <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+      <dxo-pager [showInfo]="true"></dxo-pager>
+      <dxo-paging [pageSize]="10"></dxo-paging>
+      <dxo-lookup></dxo-lookup>
+      <dxo-filter-row [visible]="true"></dxo-filter-row>
+      <dxi-column dataField="sender" caption="Người gửi" [width]="300"></dxi-column>
+      <dxi-column dataField="sendDate" caption="Ngày giờ" [width]="150"></dxi-column>
+      <dxi-column dataField="title" caption="Tiêu đề" cellTemplate="emailVNUTemplate">
+        <div *dxTemplate="let data of 'emailVNUTemplate'">
+          <span [ngClass]="(data.data.seen ==='no')?'unread':'read'" (click)="showDetailMail(data.data.id)">{{ data.data.title }}</span>
+        </div>
+      </dxi-column>
+
+    </dx-data-grid>
+  </div>
+
+  <dx-popup
+    class="popup"
+    [width]="1000" [height]="600"
+    [showCloseButton]="true"
+    [showTitle]="true"
+    title="Tiêu đề: {{titleDetailMail}}"
+    [dragEnabled]="false"
+    [(visible)]="popupVisible">
+    <div *dxTemplate="let data of 'content'">
+      <app-popup-inbox [idModify]="idModify" (closePopup)="closePopup()" [sender]="senderDetailMail" [content]="contentDetailMail" [title]="titleDetailMail"></app-popup-inbox>
+    </div>
+  </dx-popup>
+
+  <dx-popup
+    class="popup"
+    [width]="700" [height]="500"
+    [showCloseButton]="true"
+    [showTitle]="true"
+    title="Soạn tin nhắn"
+    [dragEnabled]="false"
+    [closeOnOutsideClick]="true"
+    [(visible)]="popupVisibleCreatMail">
+    <div *dxTemplate="let data of 'content'">
+      <app-popup-send-mail (closePopup)="hidePopup()"></app-popup-send-mail>
+    </div>
+  </dx-popup>
+</div>

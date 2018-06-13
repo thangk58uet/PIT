@@ -1,0 +1,19 @@
+<div id="header" class="header clearfix" (click)="holdClick($event)">
+  <div class="logo" (click)="goToDashboard()">
+    <img width="95" src="assets/uet.png" />
+  </div>
+  <div class="school">
+    <span>ĐẠI HỌC CÔNG NGHỆ - ĐẠI HỌC QUỐC GIA HÀ NỘI</span>
+  </div>
+  <div class="dev">
+    <span>DEV: <span style="text-decoration: underline"> Nguyễn Huy Thắng - Hoàng Tiến Đạt</span></span>
+  </div>
+  <div class="pull-right user-menu">
+    <div class="user-name">{{userName}}</div>
+    <i class="fa fa-user-circle-o" (click)="toggleUserMenu()"></i>
+    <ul class="user-dropdown">
+      <li (click)="logout()">
+        <i class="fa fa-sign-out"></i> Logout</li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,166 @@
+.full-menu{
+  width: 250px !important;
+  font-size: 13px;
+  background-color: #263238;
+  border-right: 1px solid #cccccc;
+  color: #d6d3d3;
+  height: 100%;
+  z-index: 9999;
+  pointer-events: all;
+}
+
+.full-menu > .left-side-bar >.left-menu-item{
+  transition: 0.4s;
+}
+.full-menu > .left-side-bar >.left-menu-item:hover > .menu-title{
+  color: #fafafa;
+}
+.nav-bar ul {
+  padding: 0;
+}
+
+.nav-bar .second-menu {
+  margin: 0;
+  max-height: 0;
+  overflow:hidden;
+  transition: 0.5s linear;
+}
+
+.nav-bar .second-open {
+  margin-top: 5px;
+  max-height: 300px;
+}
+.nav-bar ul, li{
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.toggle-menu {
+  position: absolute;
+  background-color: #222D32;
+  color: #5a738e;
+  bottom: 50px;
+  font-weight: bold;
+  display: table;
+  width: 250px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  pointer-events: all;
+}
+
+.nav-bar .left-menu-item, .nav-bar .sub-menu{
+  padding: 12px 20px;
+}
+
+.nav-bar .sub-menu{
+  box-sizing: border-box;
+}
+.nav-bar .sub-menu:hover {
+  background-color: #324148;
+  border-left: 3px solid #015198;
+  color: #fafafa;
+}
+
+.nav-bar .left-menu-item .menu-icon {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.second-menu .sub-menu {
+  padding-left: 43px;
+  font-size: 12px;
+}
+
+.nav-bar .left-side-bar div.active {
+  background-color: #015198;
+  color: #fafafa;
+}
+
+.nav-bar .left-side-bar .second-menu li.active{
+    background-color: #7788997c;
+    border-left: 3px solid #015198;
+    color: #fafafa;
+}
+
+.nav-bar .view-sub-menu {
+  float: right;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.toggle-menu-icon {
+  position: absolute;
+  background-color: #222D32;
+  color: #5a738e;
+  bottom: 50px;
+  font-weight: bold;
+  display: table;
+  width: 79px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  pointer-events: all;
+}
+
+.nav-bar-icon ul {
+  padding: 0;
+}
+
+.nav-bar-icon .left-menu-item .menu-icon {
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.nav-bar-icon .left-menu-item {
+  padding: 15px 30px;
+}
+
+.icon-menu{
+  width: 80px !important;
+  border-right: 1px solid #cccccc;
+  font-size: 13px;
+  background-color: #263238;
+  color: #ffffff;
+  height: 100%;
+  z-index: 9999;
+  pointer-events: all;
+}
+
+.nav-bar-icon .second-menu-icon {
+  position: absolute;
+  width: 220px;
+  left: 80px;
+  background-color: #263238;
+  font-size: 12px;
+  top: 0;
+  max-height: 0;
+  transition: 0.5s linear;
+  overflow: hidden;
+  color: #d6d3d3;
+}
+
+.nav-bar-icon .second-menu-icon-open {
+  max-height: 300px;
+}
+
+.nav-bar-icon .second-menu-icon li {
+  padding: 12px 20px;
+}
+
+.nav-bar-icon .second-menu-icon li:hover {
+  background-color: #324148;
+  color: #fafafa;
+}
+
+.nav-bar-icon .left-side-bar {
+  position: relative;
+}
+
+.nav-bar-icon .left-side-bar div.active {
+  background-color: #015198;
+}
+
+.nav-bar-icon .left-side-bar .second-menu-icon li.active{
+  background-color: #778899;
+}

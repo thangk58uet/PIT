@@ -1,0 +1,42 @@
+.dashboard-page{
+  padding: 20px;
+  position: relative;
+  .dashboard-header-table {
+    position: relative;
+    padding: 10px 15px;
+    .right-button-group {
+      position: relative;
+      float: right;
+      font-size: 13px;
+      span {
+        display: inline-block;
+        padding-right: 5px;
+      }
+      span:last-child {
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 0;
+      }
+    }
+    .search {
+      margin-left: -8px;
+    }
+  }
+  .dashboard-table {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .dx-datagrid .dx-column-lines > td {
+    border-left: none;
+    border-right: none;
+    text-align: center !important;
+    font-size: 15px;
+  }
+  .dx-datagrid .dx-datagrid-filter-row > td {
+    border-left: 1px solid #ddd;
+  }
+  .dx-datagrid-content .dx-datagrid-table .dx-row > td:first-child {
+    border-right: 0px;
+  }
+}
+

@@ -1,0 +1,44 @@
+
+<div class="inter-page" *ngIf="role==='student'">
+  <div class="inter-title">
+    <h3>Danh sách các công ty đã đăng kí</h3>
+  </div>
+
+  <div class="inter-header">
+    <button class="btn btn-custom btn-default" (click)="interAtSchool()">Thực Tập Tại Trường</button>
+    <button class="btn btn-custom btn-default" (click)="interAtOtherPartner()">Thực Tập Tại Công Ty Khác</button>
+  </div>
+
+  <div class="inter-table">
+    <dx-data-grid id="gridData" [dataSource]="listFollow" keyExpr="id" [showRowLines]="true" [columnAutoWidth]="true" [allowColumnReordering]="true"
+      [allowColumnResizing]="true" [columns]="columns" [showBorders]="true" [rowAlternationEnabled]="true">
+      <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+      <dxo-pager [showInfo]="true"></dxo-pager>
+      <dxo-paging [pageSize]="10"></dxo-paging>
+      <dxo-lookup></dxo-lookup>
+      <dxo-filter-row [visible]="true"></dxo-filter-row>
+      <dxi-column dataField="partner" caption="Email Partner" [width]="150"></dxi-column>
+      <dxi-column dataField="lecture" caption="Giảng Viên" [width]="150"></dxi-column>
+      <dxi-column dataField="status" caption="Trạng Thái" cellTemplate="emailStatusTemplate">
+        <div *dxTemplate="let data of 'emailStatusTemplate'">
+          <span class="{{data.data.status}}" style="cursor: pointer;" (click)="showDetailReport(data.data.id)">{{ data.data.status }}</span>
+        </div>
+      </dxi-column>
+    </dx-data-grid>
+  </div>
+
+  <dx-popup class="popup" [width]="600" [height]="300" [showCloseButton]="true" [showTitle]="true" title="Đăng kí thực tập tại trường"
+    [dragEnabled]="false" [closeOnOutsideClick]="true" [(visible)]="popupVisibleSchool">
+    <div *dxTemplate="let data of 'content'">
+      <app-inter-at-school (closePopup)="closePopupSchool()"></app-inter-at-school>
+    </div>
+  </dx-popup>
+
+  <dx-popup class="popup" [width]="800" [height]="400" [showCloseButton]="true" [showTitle]="true" title="Đăng kí thực tập tại trường"
+    [dragEnabled]="false" [closeOnOutsideClick]="true" [(visible)]="popupVisibleOtherPartner">
+    <div *dxTemplate="let data of 'content'">
+      <app-inter-at-other-partner (closePopup)="closePopupOtherPartner()"></app-inter-at-other-partner>
+    </div>
+  </dx-popup>
+
+</div>

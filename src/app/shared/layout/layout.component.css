@@ -1,0 +1,217 @@
+.app-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  min-width: 1600px;
+}
+
+.header {
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  background-color: #37474f;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  padding: 5px 10px;
+  line-height: 40px;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
+.content-container {
+  height: calc(100vh - 50px);
+}
+
+.content-container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav-bar, .nav-bar-icon {
+  position: absolute;
+  left: 0;
+  right: auto;
+  overflow: hidden;
+  top: 62px;
+  width: 280px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 8;
+  background-color:rgba(255,255,255,0)
+}
+
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  padding-left: 270px;
+  background: #fdfcfc;
+}
+
+.icon-left-menu .main-content {
+  overflow: auto;
+  height: 100%;
+  width: calc(100% - 100px);
+  margin-left: 90px;
+  background: #fdfcfc;
+  padding-left: 0;
+}
+
+.nav-bar-open .nav-bar {
+  width: 200px;
+  display: block !important;
+}
+
+.dx-header-row td{
+  background-color: #d3d3d3;
+  color: #000000;
+  border-right: 1px solid darkgray !important;
+}
+.dx-datagrid .dx-datagrid-headers .dx-row td.dx-pointer-events-none {
+  border-left: 2px solid darkgray !important;
+}
+
+.btn-custom {
+  height: 32px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 16px;
+  background-color: #229288;
+  color: #fff;
+  margin: 0 4px;
+  border-color: #26a69a;
+  border: none;
+  padding: 0 20px;
+  transition: 0.4s;
+}
+
+.btn-custom:hover {
+  background-color: #37474F;
+  color: #ffffff;
+}
+
+.btn-custom:focus:active {
+  background-color: #015198;
+  color: #ffffff;
+  outline: none;
+}
+
+.btn-custom:visited {
+  background-color: #1b746b;
+  color: #ffffff;
+  outline: none;
+}
+
+.btn-custom:active {
+  background-color: #1b746b;
+  color: #ffffff;
+  outline: none;
+}
+
+.btn-custom:focus {
+  background-color: #37474F;
+  color: #ffffff;
+  outline: none;
+}
+.dx-checkbox-checked .dx-checkbox-icon{
+  color: #fff;
+  background: #229288;
+}
+.dx-checkbox-indeterminate .dx-checkbox-icon:before{
+  background-color: #229288;
+}
+.dx-header-row td{
+  background-color: #c8c8c8de;
+  color: #333;
+}
+.dx-datagrid-rowsview .dx-selection.dx-row > td{
+  background-color: rgb(233, 233, 233);
+}
+.dx-datagrid-content .dx-datagrid-table .dx-row > td {
+  vertical-align: middle;
+}
+.dx-texteditor.dx-state-focused{
+  border: 2px solid #229288;
+}
+.dx-texteditor.dx-state-hover{
+  border: 2px solid #229288;
+}
+.form-control:focus{
+  border: 2px solid #229288;
+  box-shadow: none;
+}
+.show-result .form-control:focus{
+  border-color: #6495ed;
+}
+.dx-datagrid-headers{
+  font-size: 13px;
+}
+.dx-widget{
+  font-size: 12px;
+}
+.dx-field{
+  min-height: 0px;
+}
+.form-control {
+  min-height: 0px;
+  padding: 6px 12px;
+  font-size: 13px;
+}
+.dx-checkbox.dx-state-hover .dx-checkbox-icon{
+  border-color: #229288;
+}
+.dx-checkbox.dx-state-focused .dx-checkbox-icon{
+  border-color: #229288;
+}
+p{
+  margin: 0px;
+}
+.pagination>li>a, .pagination>li>span{
+  color: #333;
+}
+.dx-pager .dx-pages .dx-selection{
+  color: #fafafa;
+  background-color: #229288;
+  padding: 6px 12px;
+}
+.dx-datagrid-focus-overlay {
+  border: none;
+}
+.dx-texteditor-input {
+  padding: 6px 9px 6px;
+  min-height: 0px;
+}
+.dx-calendar-navigator-previous-view.dx-button .dx-icon, .dx-calendar-navigator-previous-month.dx-button .dx-icon{
+  color: #229288;
+}
+.dx-calendar-navigator-next-view.dx-button .dx-icon, .dx-calendar-navigator-next-month.dx-button .dx-icon{
+  color: #229288;
+}
+.dx-calendar-cell.dx-calendar-selected-date.dx-calendar-contoured-date{
+  box-shadow: inset 0px 0px 0px 1000px #229288;
+}
+.dx-calendar-cell.dx-calendar-contoured-date {
+  box-shadow: inset 0px 0px 0px 1px #229288;
+}
+.dx-calendar-cell.dx-calendar-selected-date{
+  box-shadow: inset 0px 0px 0px 1000px #229288;
+}
+.dx-datagrid-rowsview .dx-lookup {
+  height: 34px;
+}
+.dx-header-row td{
+  font-weight: 500;
+}
+.dx-datagrid-nowrap.dx-datagrid-headers .dx-header-row > td > .dx-datagrid-text-content{
+  text-align: center;
+}
+.dx-datagrid-action.dx-cell-focus-disabled.dx-datagrid-drag-action{
+  text-align: center!important;
+}
+.dx-calendar-cell.dx-calendar-selected-date.dx-calendar-contoured-date, .dx-calendar-cell.dx-calendar-selected-date.dx-calendar-today.dx-calendar-contoured-date{
+  box-shadow: inset 0px 0px 0px 1000px #229288;
+}

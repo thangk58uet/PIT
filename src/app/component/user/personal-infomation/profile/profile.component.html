@@ -1,0 +1,162 @@
+<div class="profile form-group">
+  <div class="row school-manager">
+    <h3>School Manager</h3>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">MSSV</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="school.mssv" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Lớp</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="school.class" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Khóa</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="school.startYear" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Ngành</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="school.major" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Địa Chỉ</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="school.address" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Họ Tên</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="school.name" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Ngày Sinh</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="school.dob" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Email VNU</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="school.emailVNU" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Điểm TB</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="number" [(ngModel)]="school.averagePoint" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Năm Tốt Nghiệp Dự Kiến</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="number" [(ngModel)]="school.passYear" (ngModelChange)="resetData()" disabled>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row school-manager">
+    <h3>Student Manager</h3>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Email Cá Nhân</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="student.emailPersonal" (ngModelChange)="resetData()">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Skype ID</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="student.skypeID" (ngModelChange)="resetData()">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Facebook</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="student.facebook" (ngModelChange)="resetData()">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Điện thoại</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="number" [(ngModel)]="student.phoneNumber" (ngModelChange)="resetData()">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Chức Vụ</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="student.position" (ngModelChange)="resetData()">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Kỹ Năng Ngoại Ngữ</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="student.english" (ngModelChange)="resetData()">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Chứng Chỉ</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="student.certificate" (ngModelChange)="resetData()">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Kinh Nghiệm Làm Việc</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="student.exp" (ngModelChange)="resetData()">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Sở Thích</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="student.hobby" (ngModelChange)="resetData()">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Định Hướng</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="student.future" (ngModelChange)="resetData()">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="col-sm-2 title-of-input">Ghi Chú</div>
+        <div class="col-sm-9 content-of-input">
+          <textarea class="form-control input note" name="textarea" id="" cols="165" rows="5" [(ngModel)]="student.note"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="button-control">
+    <button class="btn btn-custom btn-default" (click)="save()" [disabled]="disableSave" style="padding-left: 17px">Save</button>
+  </div>
+</div>

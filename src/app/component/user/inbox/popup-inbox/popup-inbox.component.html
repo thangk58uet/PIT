@@ -1,0 +1,27 @@
+<div class="popup-inbox">
+  <div class="popup-inbox-header">
+    <span>Người gửi: {{sender}}</span>
+  </div>
+  <div class="popup-inbox-content">
+    <pre style="font-size:17px">{{content}}</pre>
+  </div>
+  <div class="button-control">
+    <button class="btn btn-custom btn-default" (click)="reply()">Reply</button>
+    <button class="btn btn-custom btn-default" (click)="close()">Close</button>
+  </div>
+
+  <dx-popup
+    class="popup"
+    [width]="700" [height]="500"
+    [showCloseButton]="true"
+    [showTitle]="true"
+    title="Trả lời tin nhắn"
+    [dragEnabled]="false"
+    [closeOnOutsideClick]="true"
+    [(visible)]="popupvisibleReply">
+    <div *dxTemplate="let data of 'content'">
+      <app-popup-send-mail [type]="'reply'" [receiver]="sender" [title]="title" (closePopup)="hidePopup()"></app-popup-send-mail>
+    </div>
+  </dx-popup>
+
+</div>

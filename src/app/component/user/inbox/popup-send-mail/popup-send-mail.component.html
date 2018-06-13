@@ -1,0 +1,33 @@
+<div class="send-mail-page">
+  <div class="send-mail-content">
+    <div class="row">
+      <div class=" col-sm-2 title-of-input">Người gửi:</div>
+      <div class="col-sm-9">
+        <input class="form-control input" type="text" [(ngModel)]="sender" disabled>
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-sm-2 title-of-input">Người nhận: </div>
+      <div class="col-sm-9">
+        <input class="form-control input" type="text" [(ngModel)]="receiver" [disabled]="type==='reply'">
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-sm-2 title-of-input">Tiêu đề: </div>
+      <div class="col-sm-9">
+        <input class="form-control input" type="text" [(ngModel)]="title">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 title-of-input">Nội dung: </div>
+      <div class="col-sm-9">
+        <textarea name="textarea" id="" cols="77" rows="10" [(ngModel)]="content"></textarea>
+      </div>
+
+    </div>
+    <div class="button-control">
+      <button class="btn btn-custom btn-default" (click)="sendMail()">Send</button>
+      <button class="btn btn-custom btn-default" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</div>

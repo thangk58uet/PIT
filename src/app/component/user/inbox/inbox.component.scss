@@ -1,0 +1,35 @@
+.inbox-page {
+  h3 {
+    margin-left: 20px;
+  }
+  .inbox-table {
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 90%;
+  }
+  .dx-datagrid .dx-column-lines > td {
+    border-left: none;
+    border-right: none;
+    text-align: center !important;
+    font-size: 15px;
+  }
+  .dx-datagrid .dx-datagrid-filter-row > td {
+    border-left: 1px solid #ddd;
+  }
+  .dx-datagrid-content .dx-datagrid-table .dx-row > td:first-child {
+    border-right: 0px;
+  }
+  .read {
+    font-weight: normal;
+    color: rgb(34, 110, 209);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .unread {
+    font-weight: bold;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+}

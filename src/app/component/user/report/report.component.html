@@ -1,0 +1,57 @@
+<div class="report-page">
+  <div class="report-title">
+    <h3>Danh sách báo cáo thực tập</h3>
+  </div>
+
+  <div class="report-header">
+      <button class="btn btn-custom btn-default" (click)="createReport()">Tạo báo cáo</button>
+  </div>
+
+  <div class="report-table">
+    <dx-data-grid id="gridData" [dataSource]="listReport" keyExpr="id" [showRowLines]="true" [columnAutoWidth]="true" [allowColumnReordering]="true"
+      [allowColumnResizing]="true" [columns]="columns" [showBorders]="true" [rowAlternationEnabled]="true">
+      <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+      <dxo-pager [showInfo]="true"></dxo-pager>
+      <dxo-paging [pageSize]="10"></dxo-paging>
+      <dxo-lookup></dxo-lookup>
+      <dxo-filter-row [visible]="true"></dxo-filter-row>
+      <dxi-column dataField="sendDate" caption="Ngày giờ" [width]="150"></dxi-column>
+      <dxi-column dataField="title" caption="Tiêu đề" cellTemplate="emailVNUTemplate">
+        <div *dxTemplate="let data of 'emailVNUTemplate'">
+          <span [ngClass]="(a===true)? 'read': 'unread'" style="cursor: pointer;" (click)="showDetailReport(data.data.id)">{{ data.data.title }}</span>
+        </div>
+      </dxi-column>
+      <dxi-column dataField="point" caption="Chấm điểm" [width]="150"></dxi-column>
+
+    </dx-data-grid>
+  </div>
+
+  <dx-popup
+    class="popup"
+    [width]="800" [height]="450"
+    [showCloseButton]="true"
+    [showTitle]="true"
+    title="Tạo báo cáo"
+    [dragEnabled]="false"
+    [closeOnOutsideClick]="true"
+    [(visible)]="popupVisibleReport">
+    <div *dxTemplate="let data of 'content'">
+      <app-popup-report (closePopup)="reloadTable()"></app-popup-report>
+    </div>
+  </dx-popup>
+
+  <dx-popup
+    class="popup"
+    [width]="1000" [height]="450"
+    [showCloseButton]="true"
+    [showTitle]="true"
+    title="Xem báo cáo"
+    [dragEnabled]="false"
+    [closeOnOutsideClick]="true"
+    [(visible)]="popupVisibleDetailReport">
+    <div *dxTemplate="let data of 'content'">
+      <app-popup-report-detail [sender]="senderDetail" [receiver]="receiverDetail" [title]="titleDetail" [content]="contentDetail" [idModify]="idModify" [sendDate]="sendDateDetail" [point]="pointDetail" (closePopup)="reloadSetPoint()"></app-popup-report-detail>
+    </div>
+  </dx-popup>
+
+</div>

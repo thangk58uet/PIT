@@ -1,0 +1,41 @@
+<div class="nav-bar" id="nav-bar" (click)="holdClick($event)" *ngIf="isFullMenu">
+  <div class="full-menu">
+    <li *ngFor="let item of listMenu, let i = index" class="left-side-bar">
+      <div class="left-menu-item" (click)="selectMenu(i, -1)" [ngClass]="{'active': isActiveParent(i)}">
+        <span class="menu-icon"><i class="{{item.icon}}" aria-hidden="true"></i></span>
+        <span class="menu-title">{{item.text}}</span>
+        <span class="view-sub-menu" *ngIf="item.child.length > 0">
+          <i *ngIf="!isShowSubmenu(i)" class="fa fa-angle-down" aria-hidden="true"></i>
+          <i *ngIf="isShowSubmenu(i)" class="fa fa-angle-up" aria-hidden="true"></i>
+        </span>
+      </div>
+      <ul *ngIf="item.child.length > 0" class="second-menu" [ngClass]="{'second-open': isShowSubmenu(i)}">
+        <li *ngFor="let child of item.child, let j = index" class="sub-menu" (click)="selectMenu(i, j)"
+            [ngClass]="{'active': isActiveChild(j)}">
+          <span class="menu-title">{{child.text}}</span>
+        </li>
+      </ul>
+    </li>
+  </div>
+  <div class="toggle-menu" (click)="changeMenu()">
+    <i class="fa fa-angle-double-left" aria-hidden="true"></i>
+  </div>
+</div>
+<div class="nav-bar-icon" id="nav-bar-icon" (click)="holdClick($event)" *ngIf="!isFullMenu">
+  <ul class="icon-menu">
+    <li *ngFor="let item of listMenu, let i = index" class="left-side-bar">
+      <div class="left-menu-item" [ngClass]="{'active': isActiveParent(i)}" title="{{item.text}}" (click)="selectIconMenu(i, -1)">
+        <span class="menu-icon"><i class="{{item.icon}}" aria-hidden="true"></i></span>
+      </div>
+      <ul *ngIf="item.child.length > 0" class="second-menu-icon" [ngClass]="{'second-menu-icon-open': isShowIconsubMenu(i)}">
+        <li *ngFor="let child of item.child, let j = index" class="sub-menu" (click)="selectIconMenu(i,j)"
+            [ngClass]="{'active': isActiveChild(j)}">
+          <span class="menu-title">{{child.text}}</span>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <div class="toggle-menu-icon" (click)="changeMenu()">
+    <i class="fa fa-angle-double-right" aria-hidden="true"></i>
+  </div>
+</div>

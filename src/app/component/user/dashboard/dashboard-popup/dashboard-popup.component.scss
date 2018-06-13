@@ -1,0 +1,16 @@
+.dashboard-popup {
+  .dashboard-popup-header {
+    height: 50px;
+    background: #263238;
+    .partner {
+      float: left;
+      span {
+        color: #229288;
+      }
+      background: white;
+    }
+    .follow {
+      float: right;
+    }
+  }
+}

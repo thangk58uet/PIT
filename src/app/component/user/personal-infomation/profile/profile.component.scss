@@ -1,0 +1,49 @@
+.profile {
+  h3 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  margin-left: 50px;
+  .title-of-input {
+    font-size: 15px;
+    float: left;
+  }
+  .content-of-input {
+    float: left;
+  }
+  .row {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .dob {
+    width: 150px;
+  }
+  .form-control {
+    font-size: 15px;
+    height: 35px;
+    padding: 0;
+  }
+  .no-padding {
+    padding-left: 0;
+  }
+  button:hover {
+    background-color: #229288;
+    color: #fafafa;
+    transition: 0.4s;
+  }
+  .button-control {
+    margin-top: 35px;
+    float: right;
+    margin-right: 190px;
+    button {
+      width: 65px;
+      height: 35px;
+      padding-left: 14px;
+    }
+  }
+  .note {
+    height: 70px;
+    margin-left: -3px;
+    width: 100.5%;
+  }
+}
