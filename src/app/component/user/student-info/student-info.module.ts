@@ -6,6 +6,8 @@ import { StudentInfoComponent } from './student-info.component';
 import { HttpModule } from '@angular/http';
 import { DxButtonModule, DxDataGridModule, DxDateBoxModule, DxLookupModule, DxPopupModule, DxSelectBoxModule, DxTemplateModule, DevExtremeModule } from 'devextreme-angular';
 import { StudentInfoService } from './student-info.service';
+import { PopupStudentInfoComponent } from './popup-student-info/popup-student-info.component';
+import { ProfileService } from '../personal-infomation/profile/profile.service';
 @NgModule({
   imports: [
     CommonModule,
@@ -27,7 +29,7 @@ import { StudentInfoService } from './student-info.service';
     DxLookupModule,
     DevExtremeModule,
   ],
-  declarations: [StudentInfoComponent],
-  providers: [StudentInfoService]
+  declarations: [StudentInfoComponent, PopupStudentInfoComponent],
+  providers: [StudentInfoService,ProfileService]
 })
 export class StudentInfoModule { }

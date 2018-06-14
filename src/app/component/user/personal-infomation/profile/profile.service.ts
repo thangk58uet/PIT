@@ -8,28 +8,15 @@ export class ProfileService {
 
   constructor(private http: HttpClientCustom) { }
 
-  getDataShoolManagement(params?): Observable<any> {
-    const url = `/schoolManagement`;
-    return this.http.get(url, params).pipe(map((res: Response) => {
+  getUserInfo(userName): Observable<any> {
+    const url = `/userInfo?userName=${userName}`;
+    return this.http.get(url).pipe(map((res: Response) => {
       return res.json();
     }));
   }
 
-  editDataShoolManagement(params?): Observable<Response> {
-    return this.http.put('/schoolManagement', params).pipe(map((res: Response) => {
-      return res.json();
-    }));
-  }
-
-  getDataStudentManagement(params?): Observable<any> {
-    const url = `/studentManagement`;
-    return this.http.get(url, params).pipe(map((res: Response) => {
-      return res.json();
-    }));
-  }
-
-  editDataStudentManagement(params?): Observable<Response> {
-    return this.http.put(`/studentManagement/${params.id}`, params).pipe(map((res: Response) => {
+  editUserInfo(params?): Observable<Response> {
+    return this.http.put(`/userInfo/${params.id}`,params).pipe(map((res: Response) => {
       return res.json();
     }));
   }

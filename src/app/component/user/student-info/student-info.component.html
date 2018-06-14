@@ -1,3 +1,47 @@
-<p>
-  student-info works!
-</p>
+<div class="student-info-page">
+  <div class="student-title">
+    <h3>Quản lý thông tin sinh viên</h3>
+  </div>
+
+  <div class="student-info-table">
+    <dx-data-grid id="gridData" [dataSource]="listStudent" keyExpr="id" [showRowLines]="true" [columnAutoWidth]="true" [allowColumnReordering]="true"
+      [allowColumnResizing]="true" [columns]="columns" [showBorders]="true" [rowAlternationEnabled]="true">
+      <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+      <dxo-pager [showInfo]="true"></dxo-pager>
+      <dxo-paging [pageSize]="10"></dxo-paging>
+      <dxo-lookup></dxo-lookup>
+      <dxo-filter-row [visible]="true"></dxo-filter-row>
+      <dxi-column dataField="mssv" caption="MSSV" [width]="130"></dxi-column>
+      <dxi-column dataField="name" caption="Họ Tên"></dxi-column>
+      <dxi-column dataField="class" caption="Lớp"></dxi-column>
+      <dxi-column dataField="startYear" caption="Khóa" [width]="130"></dxi-column>
+      <dxi-column dataField="major" caption="Chuyên Ngành"></dxi-column>
+      <dxi-column dataField="address" caption="Địa Chỉ"></dxi-column>
+      <dxi-column dataField="dob" caption="Ngày Sinh"></dxi-column>
+      <dxi-column dataField="emailVNU" caption="Email VNU"></dxi-column>
+      <dxi-column [allowSorting]="false" caption="Cài Đặt" [allowHeaderFiltering]="false" [allowFiltering]="false" cellTemplate="cellAction">
+        <div *dxTemplate="let data of 'cellAction'">
+          <button (click)="editStudentInfo(data.data.id)" style="cursor: pointer;">
+            <i class="fa fa-pencil" aria-hidden="true"></i>
+          </button>
+        </div>
+      </dxi-column>
+      </dx-data-grid>
+  </div>
+
+  <dx-popup
+  class="popup"
+  [width]="1000" [height]="420"
+  [showCloseButton]="true"
+  [showTitle]="true"
+  title="Thông tin sinh viên"
+  [dragEnabled]="false"
+  [closeOnOutsideClick]="true"
+  [(visible)]="popupVisible">
+  <div *dxTemplate="let data of 'content'">
+    <app-popup-student-info [idModify]="idModify" (closePopup)="reloadTable()"></app-popup-student-info>
+  </div>
+</dx-popup>
+
+</div>
+

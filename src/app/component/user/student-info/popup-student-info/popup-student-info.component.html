@@ -1,0 +1,76 @@
+<div class="popup-student-info">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">MSSV</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="text" [(ngModel)]="userInfo.mssv" (ngModelChange)="resetData()">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">Lớp</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="text" [(ngModel)]="userInfo.class" (ngModelChange)="resetData()">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">Khóa</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="text" [(ngModel)]="userInfo.startYear" (ngModelChange)="resetData()">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">Ngành</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="text" [(ngModel)]="userInfo.major" (ngModelChange)="resetData()">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">Địa Chỉ</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="text" [(ngModel)]="userInfo.address" (ngModelChange)="resetData()">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">Họ Tên</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="text" [(ngModel)]="userInfo.name" (ngModelChange)="resetData()">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">Ngày Sinh</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="text" [(ngModel)]="userInfo.dob" (ngModelChange)="resetData()">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">Email VNU</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="text" [(ngModel)]="userInfo.emailVNU" (ngModelChange)="resetData()">
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">Điểm TB</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="number" [(ngModel)]="userInfo.averagePoint" (ngModelChange)="resetData()">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="col-sm-4 title-of-input">Năm Tốt Nghiệp Dự Kiến</div>
+      <div class="col-sm-6 content-of-input">
+        <input class="form-control input" type="number" [(ngModel)]="userInfo.passYear" (ngModelChange)="resetData()">
+      </div>
+    </div>
+  </div>
+  <div class="button-control">
+    <button class="btn btn-custom btn-default" (click)="save()" [disabled]="disableSave" style="padding-left: 17px">Save</button>
+    <button class="btn btn-custom btn-default" (click)="cancel()">Cancel</button>
+  </div>
+</div>

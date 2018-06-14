@@ -72,6 +72,8 @@ export class DashboardComponent implements OnInit {
     this.popupVisible = true;
   }
 
-  hidePopup() {}
+  hidePopup() {
+    this.popupVisible = false;
+  }
   reloadTable() {}
 }

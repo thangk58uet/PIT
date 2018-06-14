@@ -5,6 +5,7 @@ import { alert} from 'devextreme/ui/dialog';
 declare const $: any;
 import { confirm } from 'devextreme/ui/dialog';
 import { DxDataGridComponent } from 'devextreme-angular';
+import { LoginService } from '../../../../common/service/login.service';
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.component.html',
@@ -14,75 +15,58 @@ import { DxDataGridComponent } from 'devextreme-angular';
 })
 export class ProfileComponent implements OnInit {
 
-  school: shoolManagement;
-  student: studentManagement;
+  userInfo: userInfo;
   constructor(
-    private profileService: ProfileService) {}
+    private profileService: ProfileService,
+    private loginService: LoginService) {}
 
 
   ngOnInit() {
-    this.school = new shoolManagement();
-    this.student = new studentManagement();
-    this.getDataShoolManagement();
-    this.getDataStudentManagement();
+    this.userInfo = new userInfo();
+    this.userInfo.userName = this.loginService.userName;
+    this.getUserInfo();
   }
 
-  getDataShoolManagement() {
-    this.profileService.getDataShoolManagement().subscribe(res => {
-      this.school.mssv = res[0].mssv;
-      this.school.class = res[0].class;
-      this.school.startYear = res[0].startYear;
-      this.school.major = res[0].major;
-      this.school.address = res[0].address;
-      this.school.name = res[0].name;
-      this.school.dob = res[0].dob;
-      this.school.emailVNU = res[0].emailVNU;
-      this.school.averagePoint = res[0].averagePoint;
-      this.school.passYear = res[0].passYear;
-    });
-  }
-
-  getDataStudentManagement() {
-    this.profileService.getDataStudentManagement().subscribe(res => {
-      this.student.emailPersonal = res[0].emailPersonal;
-      this.student.skypeID = res[0].skypeID;
-      this.student.facebook = res[0].facebook;
-      this.student.phoneNumber = res[0].phoneNumber;
-      this.student.position = res[0].position;
-      this.student.english = res[0].english;
-      this.student.certificate = res[0].certificate;
-      this.student.exp = res[0].exp;
-      this.student.hobby = res[0].hobby;
-      this.student.future = res[0].future;
-      this.student.note = res[0].note;
+  getUserInfo() {
+    this.profileService.getUserInfo(this.loginService.userName).subscribe(res => {
+      this.userInfo.emailPersonal = res[0].emailPersonal;
+      this.userInfo.skypeID = res[0].skypeID;
+      this.userInfo.facebook = res[0].facebook;
+      this.userInfo.phoneNumber = res[0].phoneNumber;
+      this.userInfo.position = res[0].position;
+      this.userInfo.english = res[0].english;
+      this.userInfo.certificate = res[0].certificate;
+      this.userInfo.exp = res[0].exp;
+      this.userInfo.hobby = res[0].hobby;
+      this.userInfo.future = res[0].future;
+      this.userInfo.note = res[0].note;
+      this.userInfo.mssv = res[0].mssv;
+      this.userInfo.class = res[0].class;
+      this.userInfo.startYear = res[0].startYear;
+      this.userInfo.major = res[0].major;
+      this.userInfo.address = res[0].address;
+      this.userInfo.name = res[0].name;
+      this.userInfo.dob = res[0].dob;
+      this.userInfo.emailVNU = res[0].emailVNU;
+      this.userInfo.averagePoint = res[0].averagePoint;
+      this.userInfo.passYear = res[0].passYear;
+      this.userInfo.id = res[0].id;
     })
   }
 
-  resetData() {}
+  resetData(){}
 
   save() {
-    this.student.id = 1;
-    this.profileService.editDataStudentManagement(this.student).subscribe(() => {
-      alert('Save success', 'System notice');
+    this.profileService.editUserInfo(this.userInfo).subscribe(() => {
+      alert('Save success','System notice');
+      this.getUserInfo();
     })
   }
 
 }
 
-class shoolManagement {
-  mssv: string = '';
-  class: string = '';
-  startYear: string = '';
-  major: string = '';
-  address: string = '';
-  name: string = '';
-  dob: string = '';
-  emailVNU: string = '';
-  averagePoint: number = null;
-  passYear: string = '';
-  id: number = null;
-}
-class studentManagement {
+class userInfo {
+  userName: string = '';
   emailPersonal: string = '';
   skypeID: string = '';
   facebook: string = '';
@@ -94,5 +78,15 @@ class studentManagement {
   hobby: string = '';
   future: string = '';
   note: string = '';
+  mssv: string = '';
+  class: string = '';
+  startYear: string = '';
+  major: string = '';
+  address: string = '';
+  name: string = '';
+  dob: string = '';
+  emailVNU: string = '';
+  averagePoint: number = null;
+  passYear: string = '';
   id: number = null;
 }

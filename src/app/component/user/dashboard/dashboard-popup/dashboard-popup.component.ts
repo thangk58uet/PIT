@@ -27,6 +27,10 @@ export class DashboardPopupComponent implements OnInit {
   follow() {
 
   }
+
+  cancel() {
+    this.isHide.emit();
+  }
 }
 
 export class StudentFollow {

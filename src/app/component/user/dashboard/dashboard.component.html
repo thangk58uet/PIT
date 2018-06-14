@@ -32,7 +32,7 @@
   <dx-popup class="popup" [width]="900" [height]="650" [showTitle]="true" [dragEnabled]="false" [closeOnOutsideClick]="true" title="Xem bài viết"
     [(visible)]="popupVisible">
     <div *dxTemplate="let data of 'content'">
-      <app-dashboard-popup [idModify]="idModify" (isSave)="reloadTable($event)" (isHide)="hidePopup($event)" [popupVisible]="popupVisible"
+      <app-dashboard-popup [idModify]="idModify" (isSave)="reloadTable($event)" (isHide)="hidePopup()" [popupVisible]="popupVisible"
         [partner]="partner" [employees]="contentArray"></app-dashboard-popup>
     </div>
   </dx-popup>
