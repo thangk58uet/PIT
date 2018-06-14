@@ -465,23 +465,6 @@
       "id": 0.8306828464410703
     },
     {
-      "partner": "Samsung",
-      "name": "Nguyễn Huy Thắng",
-      "userName": "thangnh_58@vnu.edu.vn",
-      "mssv": "13020403",
-      "class": "K58CC",
-      "startYear": "QH-2013-I/CQ",
-      "major": "Công nghệ thông tin",
-      "averagePoint": 2.6,
-      "phoneNumber": "0968485194",
-      "emailVNU": "thangnh_58@vnu.edu.vn",
-      "emailPersonal": "thangk58uet@gmail.com",
-      "lecture": "",
-      "type": "Thực Tập Với Partner",
-      "status": "reject",
-      "id": 0.08054974454869113
-    },
-    {
       "partner": "Mobifone",
       "name": "Nguyễn Huy Thắng",
       "userName": "thangnh_58@vnu.edu.vn",
@@ -516,7 +499,24 @@
       "id": 0.4547440210734819
     },
     {
-      "partner": "Mobifone",
+      "partner": "",
+      "name": "Nguyễn Huy Thắng",
+      "userName": "thangnh_58@vnu.edu.vn",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "averagePoint": 2.6,
+      "phoneNumber": "0968485194",
+      "emailVNU": "thangnh_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "lecture": "Ma Thị Châu",
+      "status": "pending",
+      "type": "Nghiên Cứu Khoa Học",
+      "id": 0.5788050075244615
+    },
+    {
+      "partner": "Samsung",
       "name": "Nguyễn Huy Thắng",
       "userName": "thangnh_58@vnu.edu.vn",
       "mssv": "13020403",
@@ -530,7 +530,7 @@
       "lecture": "",
       "status": "pending",
       "type": "Thực Tập Với Partner",
-      "id": 0.6938852356247018
+      "id": 0.1574663955663711
     }
   ],
   "listMail": [

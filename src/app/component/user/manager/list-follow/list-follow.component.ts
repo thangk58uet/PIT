@@ -51,6 +51,7 @@ export class ListFollowComponent implements OnInit {
 
   closePopupSchool() {
     this.popupVisibleSchool = false;
+    this.getListFollow();
   }
 
   interAtOtherPartner() {
@@ -63,6 +64,7 @@ export class ListFollowComponent implements OnInit {
 
   closePopupOtherPartner() {
     this.popupVisibleOtherPartner = false;
+    this.getListFollow();
   }
 
   getStudentFollowInfo(id) {

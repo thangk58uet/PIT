@@ -23,11 +23,27 @@ export class InterAtSchoolComponent implements OnInit {
 
   ngOnInit() {
     this.interAtSchool = new InterAtSchool();
-    this.interAtSchool.student = this.loginService.userName;
+    this.interAtSchool.userName = this.loginService.userName;
+    this.getUserInfo();
+  }
+
+  getUserInfo() {
+    this.listFollowService.getUserInfo(this.loginService.userName).subscribe(res => {
+      this.interAtSchool.name = res[0].name;
+      this.interAtSchool.userName = res[0].userName;
+      this.interAtSchool.mssv = res[0].mssv;
+      this.interAtSchool.class = res[0].class;
+      this.interAtSchool.startYear = res[0].startYear;
+      this.interAtSchool.major = res[0].major;
+      this.interAtSchool.averagePoint = res[0].averagePoint;
+      this.interAtSchool.phoneNumber = res[0].phoneNumber;
+      this.interAtSchool.emailVNU = res[0].emailVNU;
+      this.interAtSchool.emailPersonal = res[0].emailPersonal;
+    })
   }
 
   save() {
-    this.interAtSchool.title = this.title;
+    this.interAtSchool.partner = '';
     this.interAtSchool.lecture = this.lecture;
     this.interAtSchool.id = Math.random();
     this.listFollowService.addRequestInterAtSchool(this.interAtSchool).subscribe(res => {
@@ -42,8 +58,19 @@ export class InterAtSchoolComponent implements OnInit {
 }
 
 export class InterAtSchool {
-  student: string = '';
-  title: string = '';
+  partner: string = '';
+  name: string = '';
+  userName: string = '';
+  mssv: string = '';
+  class: string = '';
+  startYear: string = '';
+  major: string = '';
+  averagePoint: number = null;
+  phoneNumber: string = '';
+  emailVNU: string = '';
+  emailPersonal: string = '';
   lecture: string = '';
+  status: string = 'pending';
+  type: string = 'Nghiên Cứu Khoa Học';
   id: any;
 }

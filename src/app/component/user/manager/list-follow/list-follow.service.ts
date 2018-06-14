@@ -25,13 +25,13 @@ export class ListFollowService {
 
 
   addRequestInterAtSchool (params?): Observable<Response> {
-    return this.http.post('/listInterAtSchool', params).pipe(map((res: Response) => {
+    return this.http.post('/listFollow', params).pipe(map((res: Response) => {
       return res.json();
     }));
   }
 
   addRequestInterAtOtherPartner (params?): Observable<Response> {
-    return this.http.post('/listInterAtOtherPartner', params).pipe(map((res: Response) => {
+    return this.http.post('/listFollow', params).pipe(map((res: Response) => {
       return res.json();
     }));
   }
@@ -45,6 +45,13 @@ export class ListFollowService {
 
   changeStatusStudentFollow(params?): Observable<Response> {
     return this.http.put(`/listFollow/${params.id}`,params).pipe(map((res: Response) => {
+      return res.json();
+    }));
+  }
+
+  getUserInfo(userName): Observable<any> {
+    const url = `/userInfo?userName=${userName}`;
+    return this.http.get(url).pipe(map((res: Response) => {
       return res.json();
     }));
   }
