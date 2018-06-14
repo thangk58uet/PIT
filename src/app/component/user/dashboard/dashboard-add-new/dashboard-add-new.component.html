@@ -1,0 +1,33 @@
+<div class="popup-add-new-page">
+  <div class="popup-add-new-content">
+    <div class="row">
+      <div class=" col-sm-2 title-of-input">Tiêu đề:</div>
+      <div class="col-sm-9">
+        <input class="form-control input" type="text" [(ngModel)]="title">
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-sm-2 title-of-input">Ngày đăng: </div>
+      <div class="col-sm-9">
+        <input class="form-control input" type="text" [(ngModel)]="startDate" [disabled]="type==='reply'">
+      </div>
+    </div>
+    <div class="row">
+      <div class=" col-sm-2 title-of-input">Ngày hết hạn: </div>
+      <div class="col-sm-9">
+        <input class="form-control input" type="text" [(ngModel)]="endDate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2 title-of-input">Nội dung: </div>
+      <div class="col-sm-9">
+        <textarea name="textarea" id="" cols="89" rows="15" [(ngModel)]="content"></textarea>
+      </div>
+
+    </div>
+    <div class="button-control">
+      <button class="btn btn-custom btn-default" (click)="add()">Add</button>
+      <button class="btn btn-custom btn-default" (click)="cancel()">Cancel</button>
+    </div>
+  </div>
+</div>

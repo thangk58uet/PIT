@@ -19,6 +19,13 @@ export class ReportService {
     }));
   }
 
+  getlistReportLecture(userName: string): Observable<any> {
+    const url = `/listReport?receiver=${userName}`;
+    return this.http.get(url).pipe(map((res: Response) => {
+      return res.json();
+    }));
+  }
+
   addReport (params?): Observable<Response> {
     return this.http.post('/listReport', params).pipe(map((res: Response) => {
       return res.json();

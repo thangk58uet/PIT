@@ -33,4 +33,10 @@ export class SystemManagerService {
     const url = `/userAccount/${id}`;
     return this.http.delete(url);
   }
+
+  addAccount (params?): Observable<Response> {
+    return this.http.post('/userAccount', params).pipe(map((res: Response) => {
+      return res.json();
+    }));
+  }
 }

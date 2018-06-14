@@ -156,6 +156,32 @@ export class NavComponent implements OnInit {
           text: 'Personal Information'
         },
         {
+          url: 'main/manager',
+          icon: 'fa fa-cogs',
+          isSecond: false,
+          hasChild: true,
+          child: [
+            {
+              url: 'main/manager/follow',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 3,
+              text: 'List Follow'
+            },
+            {
+              url: 'main/manager/other',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 3,
+              text: 'Other'
+            }
+          ],
+          group: 3,
+          text: 'Manager'
+        },
+        {
           url: 'main/inbox',
           icon: 'fa fa-envelope-o',
           isSecond: false,
@@ -170,7 +196,7 @@ export class NavComponent implements OnInit {
           isSecond: false,
           hasChild: true,
           child: [],
-          group: 4,
+          group: 5,
           text: 'Report'
         },
       ]

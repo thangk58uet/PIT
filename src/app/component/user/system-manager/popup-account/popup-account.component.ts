@@ -29,11 +29,21 @@ export class PopupAccountComponent implements OnInit {
     this.accountUser.nickName = this.nickName;
     this.accountUser.passWord = this.passWord;
     this.accountUser.role = this.role;
-    this.accountUser.id = this.idModify;
-    this.systemManagerService.editAccountDetail(this.accountUser).subscribe(res => {
-      alert('Save success!', 'System notice');
-      this.closePopup.emit();
-    })
+    if(this.idModify !== '') {
+      this.accountUser.id = this.idModify;
+      this.systemManagerService.editAccountDetail(this.accountUser).subscribe(res => {
+        alert('Save success!', 'System notice');
+        this.closePopup.emit();
+      })
+    }
+    else {
+      this.accountUser.id = Math.random();
+      this.systemManagerService.addAccount(this.accountUser).subscribe(res => {
+        alert('Add success!', 'System notice');
+        this.closePopup.emit();
+      })
+    }
+
   }
 }
 

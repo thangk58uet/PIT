@@ -17,6 +17,12 @@ export class DashboardService {
       return res.json();
     }));
   }
+  getDataPartner(userName): Observable<any> {
+    const url = `/employees?partner=${userName}`;
+    return this.http.get(url).pipe(map((res: Response) => {
+      return res.json();
+    }));
+  }
   postData (params?): Observable<Response> {
     return this.http.post('/employees', params).pipe(map((res: Response) => {
       return res.json();
@@ -29,6 +35,19 @@ export class DashboardService {
   getDataById(id): Observable<any> {
     const url = `/employees/${id}`;
     return this.http.get(url).pipe(map((res: Response) => {
+      return res.json();
+    }));
+  }
+
+  getUserInfo(userName): Observable<any> {
+    const url = `/userInfo?userName=${userName}`;
+    return this.http.get(url).pipe(map((res: Response) => {
+      return res.json();
+    }));
+  }
+
+  followPartner (params?): Observable<Response> {
+    return this.http.post('/listFollow', params).pipe(map((res: Response) => {
       return res.json();
     }));
   }

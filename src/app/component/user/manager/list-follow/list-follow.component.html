@@ -17,8 +17,9 @@
       <dxo-paging [pageSize]="10"></dxo-paging>
       <dxo-lookup></dxo-lookup>
       <dxo-filter-row [visible]="true"></dxo-filter-row>
-      <dxi-column dataField="partner" caption="Email Partner" [width]="150"></dxi-column>
-      <dxi-column dataField="lecture" caption="Giảng Viên" [width]="150"></dxi-column>
+      <dxi-column dataField="partner" caption="Partner"></dxi-column>
+      <dxi-column dataField="lecture" caption="Giảng Viên"></dxi-column>
+      <dxi-column dataField="type" caption="Type"></dxi-column>
       <dxi-column dataField="status" caption="Trạng Thái" cellTemplate="emailStatusTemplate">
         <div *dxTemplate="let data of 'emailStatusTemplate'">
           <span class="{{data.data.status}}" style="cursor: pointer;" (click)="showDetailReport(data.data.id)">{{ data.data.status }}</span>
@@ -42,3 +43,53 @@
   </dx-popup>
 
 </div>
+
+<div class="inter-page" *ngIf="role==='partner'">
+    <div class="inter-title">
+      <h3>Danh sách các sinh viên đã follow</h3>
+    </div>
+
+    <div class="inter-table">
+      <dx-data-grid id="gridData" [dataSource]="listFollow" keyExpr="id" [showRowLines]="true" [columnAutoWidth]="true" [allowColumnReordering]="true"
+        [allowColumnResizing]="true" [columns]="columns" [showBorders]="true" [rowAlternationEnabled]="true">
+        <dxo-column-fixing [enabled]="true"></dxo-column-fixing>
+        <dxo-pager [showInfo]="true"></dxo-pager>
+        <dxo-paging [pageSize]="10"></dxo-paging>
+        <dxo-lookup></dxo-lookup>
+        <dxo-filter-row [visible]="true"></dxo-filter-row>
+        <dxi-column dataField="mssv" caption="MSSV"></dxi-column>
+        <dxi-column dataField="name" caption="Họ Tên"></dxi-column>
+        <dxi-column dataField="emailVNU" caption="Email VNU"></dxi-column>
+        <dxi-column dataField="emailPersonal" caption="Email Personal"></dxi-column>
+        <dxi-column dataField="class" caption="Lớp"></dxi-column>
+        <dxi-column dataField="startYear" caption="Khóa"></dxi-column>
+        <dxi-column dataField="major" caption="Chuyên Ngành"></dxi-column>
+        <dxi-column dataField="averagePoint" caption="Điểm Trung Bình"></dxi-column>
+        <dxi-column dataField="phoneNumber" caption="Số Điện Thoại"></dxi-column>
+        <dxi-column dataField="status" caption="Trạng Thái" cellTemplate="emailStatus">
+          <div *dxTemplate="let data of 'emailStatus'">
+            <select class="form-control input" [(ngModel)]="data.data.status" (change)="changeStatus(data.data.status,data.data.id)">
+              <option *ngFor="let item of listStatus" [ngValue]="item">
+                {{item}}
+              </option>
+            </select>
+          </div>
+        </dxi-column>
+      </dx-data-grid>
+    </div>
+
+    <dx-popup class="popup" [width]="600" [height]="300" [showCloseButton]="true" [showTitle]="true" title="Đăng kí thực tập tại trường"
+      [dragEnabled]="false" [closeOnOutsideClick]="true" [(visible)]="popupVisibleSchool">
+      <div *dxTemplate="let data of 'content'">
+        <app-inter-at-school (closePopup)="closePopupSchool()"></app-inter-at-school>
+      </div>
+    </dx-popup>
+
+    <dx-popup class="popup" [width]="800" [height]="400" [showCloseButton]="true" [showTitle]="true" title="Đăng kí thực tập tại công ty khác"
+      [dragEnabled]="false" [closeOnOutsideClick]="true" [(visible)]="popupVisibleOtherPartner">
+      <div *dxTemplate="let data of 'content'">
+        <app-inter-at-other-partner (closePopup)="closePopupOtherPartner()"></app-inter-at-other-partner>
+      </div>
+    </dx-popup>
+
+  </div>

@@ -34,6 +34,7 @@ export class LoginComponent implements OnInit {
         this.loginService.userID = res[0].id;
         this.loginService.password = res[0].passWord;
         this.loginService.role = res[0].role;
+        this.loginService.nickName = res[0].nickName;
         this.router.navigate(['/main/dashboard']);
       }
     })

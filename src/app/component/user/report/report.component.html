@@ -18,7 +18,7 @@
       <dxi-column dataField="sendDate" caption="Ngày giờ" [width]="150"></dxi-column>
       <dxi-column dataField="title" caption="Tiêu đề" cellTemplate="emailVNUTemplate">
         <div *dxTemplate="let data of 'emailVNUTemplate'">
-          <span [ngClass]="(a===true)? 'read': 'unread'" style="cursor: pointer;" (click)="showDetailReport(data.data.id)">{{ data.data.title }}</span>
+          <span style="cursor: pointer;color: rgb(34, 110, 209);text-decoration: underline" (click)="showDetailReport(data.data.id)">{{ data.data.title }}</span>
         </div>
       </dxi-column>
       <dxi-column dataField="point" caption="Chấm điểm" [width]="150"></dxi-column>
@@ -42,7 +42,7 @@
 
   <dx-popup
     class="popup"
-    [width]="1000" [height]="450"
+    [width]="800" [height]="450"
     [showCloseButton]="true"
     [showTitle]="true"
     title="Xem báo cáo"

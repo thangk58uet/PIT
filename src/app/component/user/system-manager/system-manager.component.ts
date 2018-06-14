@@ -23,7 +23,7 @@ export class SystemManagerComponent implements OnInit {
   ngOnInit() {
     this.getListAccount();
   }
-  
+
   getListAccount() {
     this.systemManagerService.getListAccount().subscribe(res => {
       this.listAccount = res;
@@ -55,6 +55,7 @@ export class SystemManagerComponent implements OnInit {
 
   addAccount() {
     this.popupVisible = true;
+    this.idModify = '';
     if(this.popupAccountComponent) {
       this.popupAccountComponent.userName = '';
       this.popupAccountComponent.nickName = '';

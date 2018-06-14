@@ -27,18 +27,27 @@ export class ReportComponent implements OnInit {
   idModify: string = '';
   sendDateDetail: string = '';
   pointDetail: number = 0;
+  role: string = '';
   @ViewChild(PopupReportComponent) popupReportComponent: PopupReportComponent;
   constructor(private  loginService: LoginService,
               private reportService: ReportService) {}
 
   ngOnInit() {
+    this.role = this.loginService.role;
     this.getListReport();
   }
 
   getListReport() {
-    this.reportService.getlistReport(this.loginService.userName).subscribe(res => {
-      this.listReport = res;
-    })
+    if(this.role === 'lecture') {
+      this.reportService.getlistReportLecture(this.loginService.userName).subscribe(res => {
+        this.listReport = res;
+      })
+    }
+    else {
+      this.reportService.getlistReport(this.loginService.userName).subscribe(res => {
+        this.listReport = res;
+      })
+    }
   }
 
   createReport() {

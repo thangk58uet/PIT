@@ -1,6 +1,6 @@
 
 import { group } from '@angular/animations/src/animation_metadata';
-import { NgModule, Component, enableProdMode, OnInit, ViewEncapsulation } from '@angular/core';
+import { NgModule, Component, enableProdMode, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { DxDataGridModule, DxButtonModule, DxLookupModule } from 'devextreme-angular';
@@ -8,6 +8,8 @@ declare const $: any;
 import { confirm } from 'devextreme/ui/dialog';
 import { alert} from 'devextreme/ui/dialog';
 import { DashboardService } from './dashboard.service';
+import { LoginService } from '../../../common/service/login.service';
+import { DashboardAddNewComponent } from './dashboard-add-new/dashboard-add-new.component';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -16,44 +18,37 @@ import { DashboardService } from './dashboard.service';
 })
 export class DashboardComponent implements OnInit {
 
-  columnChooserModes = {
-    key: 'select',
-    name: 'Select'
-  };
-  allMode = 'allPages';
-  checkBoxesMode = 'always';
-  columns: any[];
   employees = [];
   popupVisible = false;
   idModify = '';
   partner = '';
   contentArray = '';
-  constructor(private dashboardService: DashboardService) {
+  role: string = '';
+  popupVisibleAddNew: boolean = false;
+  @ViewChild(DashboardAddNewComponent) dashboardAddNewComponent: DashboardAddNewComponent;
+  constructor(private dashboardService: DashboardService,
+              private loginService: LoginService) {
   }
   ngOnInit() {
+    this.role = this.loginService.role;
     this.getData();
+    console.log(this.role)
   }
 
   getData(){
-    this.dashboardService.getData().subscribe(res => {
-      this.employees = res;
-      console.log(res);
-    })
+    if(this.role === 'partner') {
+      this.dashboardService.getDataPartner(this.loginService.nickName).subscribe(res => {
+        this.employees = res;
+      })
+    }
+    else {
+      this.dashboardService.getData().subscribe(res => {
+        this.employees = res;
+      })
+    }
   }
 
   showDetailMail(id) {
-    // let array = {
-    //     "name": "a",
-    //     "content": this.allMode,
-    //     "partner": "Eschweiler",
-    //     "startDate": "sebastian@codingthesmartway.com",
-    //     "endDate": "a",
-    //     "id": Math.random()
-    // };
-    // this.dashboardService.postData(array).subscribe(res => {
-
-    // });
-    // this.getData();
     this.popupVisible = true;
     this.dashboardService.getDataById(id).subscribe(res => {
       this.contentArray = res.content;
@@ -64,16 +59,28 @@ export class DashboardComponent implements OnInit {
   delete(id) {
     this.dashboardService.deleteData(id).subscribe(() => {
     })
-    console.log(id);
     this.getData();
   }
 
-  add() {
-    this.popupVisible = true;
+  addNew() {
+    this.popupVisibleAddNew = true;
   }
 
   hidePopup() {
     this.popupVisible = false;
   }
-  reloadTable() {}
+  reloadTable() {
+    this.popupVisibleAddNew = false;
+    if(this.dashboardAddNewComponent) {
+      this.dashboardAddNewComponent.title = '';
+      this.dashboardAddNewComponent.startDate = '';
+      this.dashboardAddNewComponent.endDate = '';
+      this.dashboardAddNewComponent.content = '';
+    }
+    this.getData();
+  }
+
+  editPoster(id) {
+    this.popupVisible = true;
+  }
 }

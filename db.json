@@ -1,60 +1,78 @@
 {
   "employees": [
     {
-      "title": "Tuyển thực tập sinh hè 2018",
+      "title": "Tuyển thực tập sinh hè 2018",
       "content": "allPages",
-      "partner": "Samsung",
+      "partner": "FPT",
       "startDate": "20/5/2018",
       "endDate": "20/6/2018",
-      "seen": "no",
       "id": 0.15219270798227091
+    },
+    {
+      "title": "Tuyển thực tập sinh hè 2018",
+      "content": "allPages",
+      "partner": "Viettel",
+      "startDate": "20/5/2018",
+      "endDate": "20/6/2018",
+      "id": 1
+    },
+    {
+      "title": "Tuyển thực tập sinh hè 2018",
+      "content": "allPages",
+      "partner": "Mobifone",
+      "startDate": "20/5/2018",
+      "endDate": "20/6/2018",
+      "id": 2
+    },
+    {
+      "title": "Người con gái ta thương",
+      "startDate": "12/3/2018",
+      "endDate": "12/10/2018",
+      "content": "Chuyện của mùa đông",
+      "partner": "Samsung",
+      "id": 0.2963111513966541
     }
   ],
-  "schoolManagement": [
+  "userInfo": [
     {
+      "userName": "thangnh_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "unit": "Không",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Toeic",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "mssv": "13020403",
-      "class": "K58CB",
+      "class": "K58CC",
       "startYear": "QH-2013-I/CQ",
       "major": "Công nghệ thông tin",
       "address": "Thái Bình",
       "name": "Nguyễn Huy Thắng",
       "dob": "22/07/1994",
       "emailVNU": "thangnh_58@vnu.edu.vn",
-      "averagePoint": 2.5,
-      "passYear": 2017
-    }
-  ],
-  "studentManagement": [
-    {
-      "emailPersonal": "thangk58uet@gmail.com",
-      "skypeID": "Thắng Tha Thu",
-      "facebook": "facebook.com/HuyThangUet",
-      "phoneNumber": "0968485194",
-      "position": "Không",
-      "english": "Đọc, nghe",
-      "certificate": "Toeic",
-      "exp": "Không",
-      "hobby": "Tập gym,đá bóng,chơi game",
-      "future": "Đến 1 thảo nguyên xanh trồng cỏ chăn bò",
-      "note": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "id": 1
-    }
-  ],
-  "listStudent": [
-    {
-      "mssv": "13021234",
-      "class": "K57CB",
-      "startYear": "QH-2012-I/CQ",
-      "major": "Công nghệ thông tin",
-      "address": "Bắc Giang",
-      "name": "Nguyễn Tiến Đạt",
-      "dob": "20/08/1994",
-      "emailVNU": "dat.nt_57@vnu.edu.vn",
-      "averagePoint": 2.9,
-      "passYear": 2020,
+      "averagePoint": 2.6,
+      "passYear": 2017,
       "id": 1
     },
     {
+      "userName": "linhntd_59@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "mssv": "14025523",
       "class": "K59CLC",
       "startYear": "QH-2014-I/CQ",
@@ -62,12 +80,24 @@
       "address": "Hà Nội",
       "name": "Nguyễn Thị Diệu Linh",
       "dob": "22/07/1996",
-      "emailVNU": "linh.ntd_59@vnu.edu.vn",
+      "emailVNU": "linhntd_59@vnu.edu.vn",
       "averagePoint": 2,
       "passYear": 2018,
       "id": 2
     },
     {
+      "userName": "thangnh_60@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Nguyễn Huy Thắng",
       "mssv": "15026996",
       "class": "K60T",
@@ -81,6 +111,18 @@
       "id": 3
     },
     {
+      "userName": "thuongmtn_59@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Mai Thị Ngọc Thương",
       "mssv": "14020304",
       "class": "K59V",
@@ -94,6 +136,18 @@
       "id": 4
     },
     {
+      "userName": "maint_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Nguyễn Thị Mai",
       "mssv": "13021653",
       "class": "K58CB",
@@ -107,6 +161,18 @@
       "id": 5
     },
     {
+      "userName": "vietnv_57@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Nguyễn Văn Việt",
       "mssv": "12021503",
       "class": "K57CA",
@@ -120,6 +186,18 @@
       "id": 6
     },
     {
+      "userName": "thuytth_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Trần Thị Hồng Thủy",
       "mssv": "13020496",
       "class": "K58CB",
@@ -133,6 +211,18 @@
       "id": 7
     },
     {
+      "userName": "datht_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Hoàng Tiến Đạt",
       "mssv": "13020350",
       "class": "K58CB",
@@ -146,6 +236,18 @@
       "id": 8
     },
     {
+      "userName": "cucdt_57@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Đặng Thị Cúc",
       "mssv": "12020393",
       "class": "K57CC",
@@ -159,6 +261,18 @@
       "id": 9
     },
     {
+      "userName": "luant_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Nguyễn Thị Lụa",
       "mssv": "16020403",
       "class": "K61T",
@@ -172,6 +286,18 @@
       "id": 10
     },
     {
+      "userName": "thangnd_56@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "mssv": "11020433",
       "class": "K56CA",
       "startYear": "QH-2011-I/CQ",
@@ -185,19 +311,18 @@
       "id": 11
     },
     {
-      "name": "Nguyễn Huy Thắng",
-      "mssv": "13020403",
-      "class": "K58CB",
-      "startYear": "QH-2013-I/CQ",
-      "major": "Công nghệ thông tin",
-      "address": "Thái Bình",
-      "dob": "22/07/1994",
-      "emailVNU": "thangnh_58@vnu.edu.vn",
-      "averagePoint": 2.5,
-      "passYear": 2020,
-      "id": 12
-    },
-    {
+      "userName": "trangdq_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Đặng Quỳnh Trang",
       "mssv": "13020211",
       "class": "K58CD",
@@ -208,9 +333,21 @@
       "emailVNU": "trangdq_58@vnu.edu.vn",
       "averagePoint": 2.5,
       "passYear": 2020,
-      "id": 13
+      "id": 12
     },
     {
+      "userName": "phucnv_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Nguyễn Văn Phúc",
       "mssv": "16020193",
       "class": "K61V",
@@ -221,9 +358,21 @@
       "emailVNU": "phucnv_58@vnu.edu.vn",
       "averagePoint": 2.5,
       "passYear": 2020,
-      "id": 14
+      "id": 13
     },
     {
+      "userName": "trinhhtk_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0968485194",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
       "name": "Hoàng Thị Kiều Trinh",
       "mssv": "13020244",
       "class": "K58CA",
@@ -234,12 +383,40 @@
       "emailVNU": "trinhhtk_58@vnu.edu.vn",
       "averagePoint": 2.5,
       "passYear": 2020,
+      "id": 14
+    },
+    {
+      "userName": "admin@vnu.edu.vn",
+      "emailPersonal": "admin@gmail.com",
+      "unit": "Không",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0123456789",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "address": "Thái Bình",
+      "name": "Nguyễn Văn A",
+      "dob": "22/07/1994",
+      "emailVNU": "admin@vnu.edu.vn",
+      "averagePoint": 2.6,
+      "passYear": 2017,
       "id": 15
     }
   ],
-  "listStudentFollow": [
+  "listFollow": [
     {
+      "partner": "Samsung",
       "name": "Hoàng Thị Kiều Trinh",
+      "userName": "trinhhtk_58@vnu.edu.vn",
       "mssv": "13020244",
       "class": "K58CA",
       "startYear": "QH-2013-I/CQ",
@@ -247,14 +424,120 @@
       "averagePoint": 2.5,
       "phoneNumber": "0968123456",
       "emailVNU": "trinhhtk_58@vnu.edu.vn",
-      "email Personal": "kieutrinh@gmail.com"
+      "emailPersonal": "kieutrinh@gmail.com",
+      "lecture": "Ma Thị Châu",
+      "type": "Thực Tập Với Partner",
+      "status": "success",
+      "id": 1
+    },
+    {
+      "partner": "Framgia",
+      "name": "Nguyễn Huy Thắng",
+      "userName": "thangnh_58@vnu.edu.vn",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "averagePoint": 2.6,
+      "phoneNumber": "0968485194",
+      "emailVNU": "thangnh_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "lecture": "",
+      "status": "pending",
+      "type": "Thực Tập Với Partner",
+      "id": 0.9118770129200866
+    },
+    {
+      "partner": "FPT",
+      "name": "Nguyễn Huy Thắng",
+      "userName": "thangnh_58@vnu.edu.vn",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "averagePoint": 2.6,
+      "phoneNumber": "0968485194",
+      "emailVNU": "thangnh_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "lecture": "",
+      "status": "pending",
+      "type": "Thực Tập Với Partner",
+      "id": 0.8306828464410703
+    },
+    {
+      "partner": "Samsung",
+      "name": "Nguyễn Huy Thắng",
+      "userName": "thangnh_58@vnu.edu.vn",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "averagePoint": 2.6,
+      "phoneNumber": "0968485194",
+      "emailVNU": "thangnh_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "lecture": "",
+      "type": "Thực Tập Với Partner",
+      "status": "reject",
+      "id": 0.08054974454869113
+    },
+    {
+      "partner": "Mobifone",
+      "name": "Nguyễn Huy Thắng",
+      "userName": "thangnh_58@vnu.edu.vn",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "averagePoint": 2.6,
+      "phoneNumber": "0968485194",
+      "emailVNU": "thangnh_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "lecture": "",
+      "status": "pending",
+      "type": "Thực Tập Với Partner",
+      "id": 0.09179826437644634
+    },
+    {
+      "partner": "Viettel",
+      "name": "Nguyễn Huy Thắng",
+      "userName": "thangnh_58@vnu.edu.vn",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "averagePoint": 2.6,
+      "phoneNumber": "0968485194",
+      "emailVNU": "thangnh_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "lecture": "",
+      "status": "pending",
+      "type": "Thực Tập Với Partner",
+      "id": 0.4547440210734819
+    },
+    {
+      "partner": "Mobifone",
+      "name": "Nguyễn Huy Thắng",
+      "userName": "thangnh_58@vnu.edu.vn",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "averagePoint": 2.6,
+      "phoneNumber": "0968485194",
+      "emailVNU": "thangnh_58@vnu.edu.vn",
+      "emailPersonal": "thangk58uet@gmail.com",
+      "lecture": "",
+      "status": "pending",
+      "type": "Thực Tập Với Partner",
+      "id": 0.6938852356247018
     }
   ],
   "listMail": [
     {
       "sender": "admin@vnu.edu.vn",
       "receiver": "thangnh_58@vnu.edu.vn",
-      "title": "Thông tin tuyển dụng samsung",
+      "title": "b",
       "sendDate": "12/6/2018",
       "seen": "yes",
       "content": "c",
@@ -270,11 +553,11 @@
       "id": 0.6181106774614107
     },
     {
-      "sender": "partner@vnu.edu.vn",
+      "sender": "partner@gmail.com",
       "receiver": "admin@vnu.edu.vn",
       "title": "a",
       "sendDate": "12/6/2018",
-      "seen": "no",
+      "seen": "yes",
       "content": "a",
       "id": 0.45149357463229345
     },
@@ -289,7 +572,7 @@
     },
     {
       "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "partner@vnu.edu.vn",
+      "receiver": "partner@gmail.com",
       "title": "a",
       "sendDate": "12/6/2018",
       "seen": "no",
@@ -307,102 +590,59 @@
     },
     {
       "sender": "admin@vnu.edu.vn",
-      "receiver": "thangnh_58@vnu.edu.vn",
-      "title": "Thông báo mua bản quyền WC 2018",
-      "sendDate": "12/6/2018",
-      "seen": "yes",
-      "content": "Người con gái ta thương, gục khóc trên vai ta.\nGiọt nước mắt em rơi, bỗng xát con tim ta.\nTa thương em nhiều hơn chính bản thân, giả vờ cứng rắn buông lời trách móc.\nĐôi vai thinh lặng nghe tiếng thở than, ta sợ mình cũng làm ướt lưng em.\n",
-      "id": 0.13463939936004166
-    },
-    {
-      "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "admin@vnu.edu.vn",
-      "title": "Re: Thông tin tuyển dụng samsung",
-      "sendDate": "12/6/2018",
-      "seen": "no",
-      "content": "Ta đâu dám nhìn thẳng vào đôi mắt em, đôi mắt sau lưng người cũng nhoè đi vì gió.\nEm hãy cứ khóc hết những điều dở dang, mạnh mẽ lên nào, mạnh mẽ lên nào, mạnh mẽ lên nào.\nTa chỉ muốn bước đến xiết thật chặt em, em có nghe trái tim này như nghẹt thở.\nNếu muốn khóc cứ đến bên ta những lúc yếu lòng.\nTa thương em, thương em, ta thương em nhiều. Và ta xót cho ta.",
-      "id": 0.15502238077445707
-    },
-    {
-      "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "lecture@vnu.edu.vn",
-      "title": "Re: a",
-      "sendDate": "12/6/2018",
-      "seen": "no",
-      "content": "Ta đâu dám nhìn thẳng vào đôi mắt em, đôi mắt sau lưng người cũng nhoè đi vì gió.\nEm hãy cứ khóc hết những điều dở dang, mạnh mẽ lên nào, mạnh mẽ lên nào, mạnh mẽ lên nào.\nTa chỉ muốn bước đến xiết thật chặt em, em có nghe trái tim này như nghẹt thở.\nNếu muốn khóc cứ đến bên ta những lúc yếu lòng.\nTa thương em, thương em, ta thương em nhiều. Và ta xót cho ta.",
-      "id": 0.953138854166989
-    },
-    {
-      "sender": "thangnh_58@vnu.edu.vn",
       "receiver": "partner@gmail.com",
-      "title": "Người con gái ta thương",
-      "sendDate": "12/6/2018",
+      "title": "Re: a",
+      "sendDate": "14/6/2018",
       "seen": "no",
-      "content": "Ta đâu dám nhìn thẳng vào đôi mắt em, đôi mắt sau lưng người cũng nhoè đi vì gió.\nEm hãy cứ khóc hết những điều dở dang, mạnh mẽ lên nào, mạnh mẽ lên nào, mạnh mẽ lên nào.\nTa chỉ muốn bước đến xiết thật chặt em, em có nghe trái tim này như nghẹt thở.\nNếu muốn khóc cứ đến bên ta những lúc yếu lòng.\nTa thương em, thương em, ta thương em nhiều. Và ta xót cho ta.",
-      "id": 0.3325504251684501
+      "content": "Cuốn theo chiều gió",
+      "id": 0.6279896118517059
+    },
+    {
+      "sender": "samsung@vnu.edu.vn",
+      "receiver": "thangnh_58@vnu.edu.vn",
+      "title": "abc",
+      "sendDate": "14/6/2018",
+      "seen": "no",
+      "content": "xyz",
+      "id": 0.3836186480486721
+    }
+  ],
+  "listReport": [
+    {
+      "sender": "thangnh_58@vnu.edu.vn",
+      "receiver": "thanhld@vnu.edu.vn",
+      "sendDate": "12/6/2018",
+      "title": "[Báo cáo]: Chuyện của mùa đông",
+      "point": 8,
+      "content": "Ta đâu dám nhìn thẳng vào đôi mắt em\nĐôi mắt sau lưng người đã nhòe đi vì gió",
+      "id": 0.5445869145862863
     },
     {
       "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "admin@vnu.edu.vn",
-      "title": "Re: Thông báo mua bản quyền WC 2018",
-      "sendDate": "12/6/2018",
-      "seen": "no",
-      "content": "Ta xót cho ta.\nTa xót cho ta.\nTa đâu dám nhìn thẳng vào đôi mắt em, đôi mắt sau lưng người cũng nhoè đi vì gió.\nEm hãy cứ khóc hết những điều dở dang, mạnh mẽ lên nào, mạnh mẽ lên nào, mạnh mẽ lên nào.\nTa chỉ muốn bước đến xiết thật chặt em, em có nghe trái tim này như nghẹt thở.\nNếu muốn khóc cứ đến bên ta những lúc yếu lòng.\nTa thương em, thương em, ta thương em nhiều. Và ta xót cho ta.",
-      "id": 0.015246373921875778
-    },
-    {
-      "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "admin@vnu.edu.vn",
-      "title": "Chuyện của mùa đông",
-      "sendDate": "12/6/2018",
-      "seen": "no",
-      "content": "Vô tình là cơn gió mang yêu thương tới gần bên \nGiữ gìn là trọng trách đôi vai anh thêm sức mạnh \nTin tưởng là lời hứa xa bao lâu vẫn tìm nhau \nAnh chẳng hứa sẽ sang giàu \nChỉ hứa yêu dài lâu \nLỡ mai rời xa, ai biết được \nChợt biến mất hay vội lạc những nốt yêu thương \nMất nhau ngoài kia, không với kịp \nVẽ ánh hoàng hôn nơi có đôi tim cùng nhịp ",
-      "id": 0.43405229289173386
+      "receiver": "thanhld@vnu.edu.vn",
+      "sendDate": "11/6/2018",
+      "title": "[Báo cáo]: Hẹn một mai",
+      "point": 7,
+      "content": "Vô tình là cơn gió mang yêu thương đến gần bên\nGiữ gìn là trọng trách cho vai anh thêm sức mạnh",
+      "id": 0.828170499456583
     },
     {
       "sender": "thangnh_58@vnu.edu.vn",
       "receiver": "lecture@vnu.edu.vn",
-      "title": "Hẹn một mai",
-      "sendDate": "12/6/2018",
-      "seen": "no",
-      "content": "Vô tình là cơn gió mang yêu thương tới gần bên \nGiữ gìn là trọng trách đôi vai anh thêm sức mạnh \nTin tưởng là lời hứa xa bao lâu vẫn tìm nhau \nAnh chẳng hứa sẽ sang giàu \nChỉ hứa yêu dài lâu \nLỡ mai rời xa, ai biết được \nChợt biến mất hay vội lạc những nốt yêu thương \nMất nhau ngoài kia, không với kịp \nVẽ ánh hoàng hôn nơi có đôi tim cùng nhịp ",
-      "id": 0.5339525198890942
+      "sendDate": "13/6/2018",
+      "title": "[Báo cáo]: Người con gái ta thương",
+      "point": 0,
+      "content": "Ta đâu dám nhìn thẳng vào đôi mắt em\nĐôi mắt sau lưng người đã nhòe đi vì gió",
+      "id": 0.7905934893618025
     },
     {
       "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "admin@vnu.edu.vn",
-      "title": "Re: Thông báo mua hàng chất lượng cao",
-      "sendDate": "12/6/2018",
-      "seen": "no",
-      "content": "Vô tình là cơn gió mang yêu thương tới gần bên \nGiữ gìn là trọng trách đôi vai anh thêm sức mạnh \nTin tưởng là lời hứa xa bao lâu vẫn tìm nhau \nAnh chẳng hứa sẽ sang giàu \nChỉ hứa yêu dài lâu \nLỡ mai rời xa, ai biết được \nChợt biến mất hay vội lạc những nốt yêu thương \nMất nhau ngoài kia, không với kịp \nVẽ ánh hoàng hôn nơi có đôi tim cùng nhịp ",
-      "id": 0.5357742116917876
-    },
-    {
-      "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "admin@vnu.edu.vn",
-      "title": "Re: Thông tin tuyển dụng FPT",
-      "sendDate": "12/6/2018",
-      "seen": "no",
-      "content": "Vô tình là cơn gió mang yêu thương tới gần bên \nGiữ gìn là trọng trách đôi vai anh thêm sức mạnh \nTin tưởng là lời hứa xa bao lâu vẫn tìm nhau \nAnh chẳng hứa sẽ sang giàu \nChỉ hứa yêu dài lâu \nLỡ mai rời xa, ai biết được \nChợt biến mất hay vội lạc những nốt yêu thương \nMất nhau ngoài kia, không với kịp \nVẽ ánh hoàng hôn nơi có đôi tim cùng nhịp ",
-      "id": 0.8462113712942771
-    },
-    {
-      "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "admin@vnu.edu.vn",
-      "title": "Re: Thông tin tuyển dụng samsung",
-      "sendDate": "12/6/2018",
-      "seen": "no",
-      "content": "closePopup",
-      "id": 0.785090805227904
-    },
-    {
-      "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "admin@vnu.edu.vn",
-      "title": "Re: Thông báo mua bản quyền WC 2018",
-      "sendDate": "12/6/2018",
-      "seen": "no",
-      "content": "Vô tình là cơn gió mang yêu thương tới gần bên \nGiữ gìn là trọng trách đôi vai anh thêm sức mạnh \nTin tưởng là lời hứa xa bao lâu vẫn tìm nhau \nAnh chẳng hứa sẽ sang giàu \nChỉ hứa yêu dài lâu \nLỡ mai rời xa, ai biết được \nChợt biến mất hay vội lạc những nốt yêu thương \nMất nhau ngoài kia, không với kịp \nVẽ ánh hoàng hôn nơi có đôi tim cùng nhịp ",
-      "id": 0.8013208788803299
+      "receiver": "thanhld@vnu.edu.vn",
+      "sendDate": "13/6/2018",
+      "title": "[Báo cáo]: Chưa bao giờ",
+      "point": 9,
+      "content": "Bây giờ anh biết vì sao\nGặp nhau biển xô sóng trào",
+      "id": 0.6563665499286724
     }
   ],
   "listPartnerStatus": [
@@ -414,27 +654,72 @@
   "userAccount": [
     {
       "userName": "thangnh_58@vnu.edu.vn",
-      "passWord": "abc",
+      "nickName": "Thắng Tha Thu",
+      "passWord": "abc13579",
       "role": "student",
       "id": 1
     },
     {
-      "userName": "thanhld",
+      "userName": "thanhld@vnu.edu.vn",
+      "nickName": "Lê Đình Thanh",
       "passWord": "abc13579",
       "role": "lecture",
       "id": 2
     },
     {
-      "userName": "admin",
+      "userName": "admin@vnu.edu.vn",
+      "nickName": "admin",
       "passWord": "admin",
       "role": "admin",
       "id": 3
     },
     {
-      "userName": "partner",
-      "passWord": "partner",
+      "userName": "samsung@vnu.edu.vn",
+      "passWord": "samsung",
+      "nickName": "Samsung",
       "role": "partner",
       "id": 4
+    },
+    {
+      "userName": "a",
+      "nickName": "b",
+      "passWord": "a",
+      "role": "admin",
+      "id": 0.2106784922573448
+    }
+  ],
+  "listInterAtSchool": [
+    {
+      "student": "thangnh_58@vnu.edu.vn",
+      "title": "Nghiên cứu ứng dụng web",
+      "lecture": "Lê Đình Thanh",
+      "id": 0.15936467808364796
+    },
+    {
+      "student": "thangnh_58@vnu.edu.vn",
+      "title": "Nghiên cứu đồ họa máy tính",
+      "lecture": "Nguyễn Thị Minh Châu",
+      "id": 0.760489044266839
+    },
+    {
+      "student": "thangnh_58@vnu.edu.vn",
+      "title": "Nghiên cứu vật lý kỹ thuật",
+      "lecture": "Nguyễn Đại Thọ",
+      "id": 0.2570411583933132
+    }
+  ],
+  "listInterAtOtherPartner": [
+    {
+      "student": "thangnh_58@vnu.edu.vn",
+      "partner": "GEM",
+      "descriptionPartner": "abc",
+      "id": 1
+    },
+    {
+      "student": "thangnh_58@vnu.edu.vn",
+      "partnerName": "zzz",
+      "description": "zzzz",
+      "id": 0.3295974261159631
     }
   ]
 }

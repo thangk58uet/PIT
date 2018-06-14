@@ -13,6 +13,7 @@ export class LoginService {
   userName: string = '';
   password: string = '';
   userID: string = '';
+  nickName: string = '';
   constructor(private http: HttpClientCustom) {
   }
 

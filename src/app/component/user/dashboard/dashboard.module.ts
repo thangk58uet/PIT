@@ -7,6 +7,7 @@ import { DxButtonModule, DxDataGridModule, DxDateBoxModule, DxLookupModule, DxPo
 import { DashboardService } from './dashboard.service';
 import { HttpModule } from '@angular/http';
 import { DashboardPopupComponent } from './dashboard-popup/dashboard-popup.component';
+import { DashboardAddNewComponent } from './dashboard-add-new/dashboard-add-new.component';
 @NgModule({
   imports: [
     CommonModule,
@@ -30,7 +31,8 @@ import { DashboardPopupComponent } from './dashboard-popup/dashboard-popup.compo
   ],
   declarations: [
     DashboardComponent,
-    DashboardPopupComponent
+    DashboardPopupComponent,
+    DashboardAddNewComponent
   ],
   providers: [DashboardService]
 })

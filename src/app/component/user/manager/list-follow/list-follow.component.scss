@@ -4,5 +4,24 @@
   }
   .inter-table {
     margin-top: 20px;
+    span {
+      display: inline-block;
+      height: 26px;
+      border-radius: 10px;
+      width: 76px;
+    }
+    .pending {
+      background: rgb(201, 199, 199);
+    }
+    .success {
+      background: green;
+    }
+    .reject {
+      background: red;
+    }
+  }
+  .dx-datagrid .dx-column-lines > td {
+    text-align: center !important;
+    font-size: 15px;
   }
 }

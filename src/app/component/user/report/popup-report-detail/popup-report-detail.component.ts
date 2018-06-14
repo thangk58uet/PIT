@@ -7,7 +7,8 @@ import { ReportService } from '../report.service';
 @Component({
   selector: 'app-popup-report-detail',
   templateUrl: './popup-report-detail.component.html',
-  styleUrls: ['./popup-report-detail.component.scss']
+  styleUrls: ['./popup-report-detail.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class PopupReportDetailComponent implements OnInit {
 
@@ -21,11 +22,13 @@ export class PopupReportDetailComponent implements OnInit {
   reportDetail: Report;
   @Input() point: number = 0;
   listPoint = [0,1,2,3,4,5,6,7,8,9,10];
+  role: string = '';
   constructor(private loginService: LoginService,
               private reportService: ReportService) { }
 
   ngOnInit() {
     this.reportDetail = new Report();
+    this.role = this.loginService.role;
   }
 
   save() {

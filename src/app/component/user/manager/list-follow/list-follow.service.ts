@@ -35,4 +35,17 @@ export class ListFollowService {
       return res.json();
     }));
   }
+
+  getStudentFollowInfo(id): Observable<any> {
+    const url = `/listFollow/${id}`;
+    return this.http.get(url).pipe(map((res: Response) => {
+      return res.json();
+    }));
+  }
+
+  changeStatusStudentFollow(params?): Observable<Response> {
+    return this.http.put(`/listFollow/${params.id}`,params).pipe(map((res: Response) => {
+      return res.json();
+    }));
+  }
 }
