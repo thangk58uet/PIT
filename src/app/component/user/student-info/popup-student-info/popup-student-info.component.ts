@@ -26,6 +26,7 @@ export class PopupStudentInfoComponent implements OnInit {
     if (this.idModify) {
       this.studentInfoService.getStudentDetail(this.idModify).subscribe(res => {
         this.userInfo.emailPersonal = res.emailPersonal;
+        this.userInfo.unit = res.unit;
         this.userInfo.skypeID = res.skypeID;
         this.userInfo.facebook = res.facebook;
         this.userInfo.phoneNumber = res.phoneNumber;
@@ -69,6 +70,7 @@ export class PopupStudentInfoComponent implements OnInit {
 class UserInfo {
   userName: string = '';
   emailPersonal: string = '';
+  unit: string = '';
   skypeID: string = '';
   facebook: string = '';
   phoneNumber: string = '';

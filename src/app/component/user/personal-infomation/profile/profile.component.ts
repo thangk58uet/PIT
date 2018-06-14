@@ -15,6 +15,7 @@ import { LoginService } from '../../../../common/service/login.service';
 })
 export class ProfileComponent implements OnInit {
 
+  role: string = '';
   userInfo: userInfo;
   constructor(
     private profileService: ProfileService,
@@ -24,12 +25,14 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     this.userInfo = new userInfo();
     this.userInfo.userName = this.loginService.userName;
+    this.role = this.loginService.role;
     this.getUserInfo();
   }
 
   getUserInfo() {
     this.profileService.getUserInfo(this.loginService.userName).subscribe(res => {
       this.userInfo.emailPersonal = res[0].emailPersonal;
+      this.userInfo.unit = res[0].unit;
       this.userInfo.skypeID = res[0].skypeID;
       this.userInfo.facebook = res[0].facebook;
       this.userInfo.phoneNumber = res[0].phoneNumber;
@@ -68,6 +71,7 @@ export class ProfileComponent implements OnInit {
 class userInfo {
   userName: string = '';
   emailPersonal: string = '';
+  unit: string = '';
   skypeID: string = '';
   facebook: string = '';
   phoneNumber: string = '';

@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { StudentInfoComponent } from './student-info.component';
 import { HttpModule } from '@angular/http';
+import { SystemManagerComponent } from './system-manager.component';
 import { DxButtonModule, DxDataGridModule, DxDateBoxModule, DxLookupModule, DxPopupModule, DxSelectBoxModule, DxTemplateModule, DevExtremeModule } from 'devextreme-angular';
-import { StudentInfoService } from './student-info.service';
-import { PopupStudentInfoComponent } from './popup-student-info/popup-student-info.component';
-import { ProfileService } from '../personal-infomation/profile/profile.service';
+import { SystemManagerService } from './system-manager.service';
+import { PopupAccountComponent } from './popup-account/popup-account.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,9 +15,9 @@ import { ProfileService } from '../personal-infomation/profile/profile.service';
     HttpModule,
     RouterModule.forChild([{
       path: '',
-      component: StudentInfoComponent,
+      component: SystemManagerComponent,
       children: [
-        {path: 'student-info', component: StudentInfoComponent},
+        {path: 'system-manager', component: SystemManagerComponent},
       ]
     }]),
     DxButtonModule,
@@ -29,7 +29,7 @@ import { ProfileService } from '../personal-infomation/profile/profile.service';
     DxLookupModule,
     DevExtremeModule,
   ],
-  declarations: [StudentInfoComponent, PopupStudentInfoComponent],
-  providers: [StudentInfoService,ProfileService]
+  declarations: [SystemManagerComponent, PopupAccountComponent],
+  providers: [SystemManagerService]
 })
-export class StudentInfoModule { }
+export class SystemManagerModule { }

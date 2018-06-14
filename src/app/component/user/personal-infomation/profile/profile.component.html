@@ -1,4 +1,4 @@
-<div class="profile form-group">
+<div *ngIf="role==='student'" class="profile form-group">
   <div class="row school-manager">
     <h3>School Manager</h3>
     <div class="row">
@@ -159,4 +159,52 @@
   <div class="button-control">
     <button class="btn btn-custom btn-default" (click)="save()" [disabled]="disableSave" style="padding-left: 17px">Save</button>
   </div>
+</div>
+
+<div *ngIf="role==='admin'" class="profile form-group">
+  <h3>Quản lý thông tin</h3>
+  <div class="profile-content">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Họ tên</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="userInfo.name" (ngModelChange)="resetData()">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Đơn vị</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="userInfo.unit" (ngModelChange)="resetData()">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Email VNU</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="userInfo.emailVNU" (ngModelChange)="resetData()">
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Email Cá Nhân</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="userInfo.emailPersonal" (ngModelChange)="resetData()">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="col-sm-4 title-of-input">Số Điện Thoại</div>
+        <div class="col-sm-6 content-of-input">
+          <input class="form-control input" type="text" [(ngModel)]="userInfo.phoneNumber" (ngModelChange)="resetData()">
+        </div>
+      </div>
+    </div>
+
+
+    <div class="button-control">
+      <button class="btn btn-custom btn-default" (click)="save()" [disabled]="disableSave" style="padding-left: 17px">Save</button>
+    </div>
+  </div>
+
 </div>

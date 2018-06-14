@@ -156,32 +156,6 @@ export class NavComponent implements OnInit {
           text: 'Personal Information'
         },
         {
-          url: 'main/manager',
-          icon: 'fa fa-cogs',
-          isSecond: false,
-          hasChild: true,
-          child: [
-            {
-              url: 'main/manager/follow',
-              icon: 'fa fa-circle',
-              isSecond: true,
-              hasChild: false,
-              group: 3,
-              text: 'List Follow'
-            },
-            {
-              url: 'main/manager/other',
-              icon: 'fa fa-circle',
-              isSecond: true,
-              hasChild: false,
-              group: 3,
-              text: 'Other'
-            }
-          ],
-          group: 3,
-          text: 'Manager'
-        },
-        {
           url: 'main/inbox',
           icon: 'fa fa-envelope-o',
           isSecond: false,
@@ -213,48 +187,82 @@ export class NavComponent implements OnInit {
           text: 'Dashboard'
         },
         {
-          url: 'main/student',
+          url: 'main/personal',
           icon: 'fa fa-address-card-o',
           isSecond: false,
           hasChild: true,
-          child: [],
+          child: [
+            {
+              url: 'main/personal/profile',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 2,
+              text: 'Profile'
+            },
+            {
+              url: 'main/personal/change-password',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 2,
+              text: 'Change Password'
+            }
+          ],
           group: 2,
-          text: 'Student Info Manager'
+          text: 'Personal Information'
         },
         {
-          url: 'main/personal/change-password',
+          url: 'main/student-info',
           icon: 'fa fa-address-card-o',
           isSecond: false,
           hasChild: true,
           child: [],
           group: 3,
-          text: 'Change Password'
+          text: 'Student Info Manager'
         },
         {
-          url: 'main/manager',
+          url: 'main/system-manager',
+          icon: 'fa fa-cogs',
+          isSecond: false,
+          hasChild: true,
+          child: [],
+          group: 4,
+          text: 'System Manager'
+        },
+        {
+          url: 'main/intership-manager',
           icon: 'fa fa-cogs',
           isSecond: false,
           hasChild: true,
           child: [
             {
-              url: 'main/manager/follow',
+              url: 'main/intership-manager/school',
               icon: 'fa fa-circle',
               isSecond: true,
               hasChild: false,
-              group: 3,
-              text: 'List Follow'
+              group: 5,
+              text: 'School'
             },
             {
-              url: 'main/manager/other',
+              url: 'main/intership-manager/partner',
               icon: 'fa fa-circle',
               isSecond: true,
               hasChild: false,
-              group: 3,
-              text: 'Other'
+              group: 5,
+              text: 'Partner'
+            },
+            {
+              url: 'main/intership-manager/other-company',
+              icon: 'fa fa-circle',
+              isSecond: true,
+              hasChild: false,
+              group: 5,
+              text: 'Other Company'
             }
           ],
-          group: 3,
-          text: 'Manager'
+          group: 5,
+          text: 'Intership Manager'
         },
         {
           url: 'main/inbox',
@@ -262,7 +270,7 @@ export class NavComponent implements OnInit {
           isSecond: false,
           hasChild: true,
           child: [],
-          group: 4,
+          group: 6,
           text: 'Inbox'
         },
         {
@@ -271,7 +279,7 @@ export class NavComponent implements OnInit {
           isSecond: false,
           hasChild: true,
           child: [],
-          group: 4,
+          group: 6,
           text: 'Report'
         },
       ]
