@@ -348,30 +348,13 @@ export class NavComponent implements OnInit {
           text: 'Personal Information'
         },
         {
-          url: 'main/manager',
+          url: 'main/student-info',
           icon: 'fa fa-cogs',
           isSecond: false,
           hasChild: true,
-          child: [
-            {
-              url: 'main/manager/follow',
-              icon: 'fa fa-circle',
-              isSecond: true,
-              hasChild: false,
-              group: 3,
-              text: 'List Follow'
-            },
-            {
-              url: 'main/manager/other',
-              icon: 'fa fa-circle',
-              isSecond: true,
-              hasChild: false,
-              group: 3,
-              text: 'Other'
-            }
-          ],
+          child: [],
           group: 3,
-          text: 'Manager'
+          text: 'ListStudentIntership'
         },
         {
           url: 'main/inbox',

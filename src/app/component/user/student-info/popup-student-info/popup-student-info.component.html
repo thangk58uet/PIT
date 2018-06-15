@@ -70,7 +70,7 @@
     </div>
   </div>
   <div class="button-control">
-    <button class="btn btn-custom btn-default" (click)="save()" [disabled]="disableSave" style="padding-left: 17px">Save</button>
+    <button *ngIf="role === 'admin'" class="btn btn-custom btn-default" (click)="save()" [disabled]="disableSave" style="padding-left: 17px">Save</button>
     <button class="btn btn-custom btn-default" (click)="cancel()">Cancel</button>
   </div>
 </div>

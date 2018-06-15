@@ -14,11 +14,13 @@ export class PopupStudentInfoComponent implements OnInit {
   userInfo: UserInfo;
   @Input() idModify = null;
   @Output() closePopup = new EventEmitter;
+  role: string = '';
   constructor(private studentInfoService: StudentInfoService,
     private profileService: ProfileService,
     private loginService: LoginService) { }
 
   ngOnInit() {
+    this.role = this.loginService.role;
     this.userInfo = new UserInfo();
   }
 

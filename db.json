@@ -410,6 +410,58 @@
       "averagePoint": 2.6,
       "passYear": 2017,
       "id": 15
+    },
+    {
+      "userName": "samsung@vnu.edu.vn",
+      "emailPersonal": "samsung@samsung.vn",
+      "unit": "Samsung Electronic Viet Nam",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "0123456789",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "address": "Thái Bình",
+      "name": "Samsung",
+      "dob": "22/07/1994",
+      "emailVNU": "samsung@vnu.edu.vn",
+      "averagePoint": 2.6,
+      "passYear": 2017,
+      "id": 16
+    },
+    {
+      "userName": "thanhld@vnu.edu.vn",
+      "emailPersonal": "thanhld@gmail.com",
+      "unit": "Khoa CNTT",
+      "skypeID": "Thắng Tha Thu",
+      "facebook": "facebook.com/huythanguet",
+      "phoneNumber": "01234567892",
+      "position": "Không",
+      "english": "Không",
+      "certificate": "Toeic",
+      "exp": "Không",
+      "hobby": "Đá bóng",
+      "future": "Chưa có định hướng",
+      "note": "Chuyện của mùa đông",
+      "mssv": "13020403",
+      "class": "K58CC",
+      "startYear": "QH-2013-I/CQ",
+      "major": "Công nghệ thông tin",
+      "address": "Thái Bình",
+      "name": "Lê Đình Thanh",
+      "dob": "22/07/1994",
+      "emailVNU": "thanhld@vnu.edu.vn",
+      "averagePoint": 2.6,
+      "passYear": 2017,
+      "id": 17
     }
   ],
   "listFollow": [
@@ -514,23 +566,6 @@
       "status": "pending",
       "type": "Nghiên Cứu Khoa Học",
       "id": 0.5788050075244615
-    },
-    {
-      "partner": "Samsung",
-      "name": "Nguyễn Huy Thắng",
-      "userName": "thangnh_58@vnu.edu.vn",
-      "mssv": "13020403",
-      "class": "K58CC",
-      "startYear": "QH-2013-I/CQ",
-      "major": "Công nghệ thông tin",
-      "averagePoint": 2.6,
-      "phoneNumber": "0968485194",
-      "emailVNU": "thangnh_58@vnu.edu.vn",
-      "emailPersonal": "thangk58uet@gmail.com",
-      "lecture": "",
-      "status": "pending",
-      "type": "Thực Tập Với Partner",
-      "id": 0.1574663955663711
     }
   ],
   "listMail": [
@@ -544,7 +579,7 @@
       "id": 0.6333949291197631
     },
     {
-      "sender": "lecture@vnu.edu.vn",
+      "sender": "thanhld@vnu.edu.vn",
       "receiver": "thangnh_58@vnu.edu.vn",
       "title": "a",
       "sendDate": "12/6/2018",
@@ -553,7 +588,7 @@
       "id": 0.6181106774614107
     },
     {
-      "sender": "partner@gmail.com",
+      "sender": "samsung@gmail.com",
       "receiver": "admin@vnu.edu.vn",
       "title": "a",
       "sendDate": "12/6/2018",
@@ -563,7 +598,7 @@
     },
     {
       "sender": "thangnh_58@vnu.edu.vn",
-      "receiver": "lecture@vnu.edu.vn",
+      "receiver": "thanhld@vnu.edu.vn",
       "title": "a",
       "sendDate": "12/6/2018",
       "seen": "no",
@@ -590,7 +625,7 @@
     },
     {
       "sender": "admin@vnu.edu.vn",
-      "receiver": "partner@gmail.com",
+      "receiver": "thanhld@vnu.edu.vn",
       "title": "Re: a",
       "sendDate": "14/6/2018",
       "seen": "no",
